@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+false
+]]></content>
+	<tabTrigger>f</tabTrigger>
+	<scope>source.ruby</scope>
+	<context>
+		[
+			{"key": "selection_empty", "operator": "equal", "operand": true},
+			{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "\\.\\s*f$"},
+		]
+	</context>
+	<description>boolean false</description>
+</snippet>

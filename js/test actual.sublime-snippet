@@ -1,0 +1,8 @@
+<snippet>
+		<content><![CDATA[
+actual
+]]></content>
+		<tabTrigger>taa</tabTrigger>
+		<scope>source.js</scope>
+		<description></description>
+</snippet>

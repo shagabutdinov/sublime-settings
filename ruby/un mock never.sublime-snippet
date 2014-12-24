@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+never()
+]]></content>
+	<tabTrigger>un</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

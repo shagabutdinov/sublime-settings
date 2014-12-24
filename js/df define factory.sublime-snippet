@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+extend: {
+	factory: function() {
+		${0}
+	}
+},
+]]></content>
+	<tabTrigger>df</tabTrigger>
+	<scope>source.js</scope>
+	<description>define factory method</description>
+</snippet>

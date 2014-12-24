@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+module ${1:IdFly}::${2:module} end
+
+class ${1:IdFly}::${2:module}::${3:${2:module}}
+
+	$0
+
+end]]></content>
+	<tabTrigger>M</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if(empty($1)) {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>ie</tabTrigger>
+	<scope>source.php</scope>
+	<description></description>
+</snippet>

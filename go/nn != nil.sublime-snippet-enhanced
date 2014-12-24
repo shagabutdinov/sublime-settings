@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+!= nil
+]]></content>
+	<tabTrigger>nn</tabTrigger>
+	<scope>source.go</scope>
+	<description>!= nil</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+clone()
+]]></content>
+	<tabTrigger>cl</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>clone</description>
+</snippet>

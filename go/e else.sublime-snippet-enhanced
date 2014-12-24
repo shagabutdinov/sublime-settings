@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+else {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>e</tabTrigger>
+	<scope>source.go</scope>
+	<description>else</description>
+</snippet>

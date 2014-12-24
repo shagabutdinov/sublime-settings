@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<% else %>
+${0:$indented_selection}
+]]></content>
+	<tabTrigger>el</tabTrigger>
+	<scope>text.html.ruby(?!.*source)</scope>
+</snippet>

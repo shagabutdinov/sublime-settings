@@ -1,0 +1,8 @@
+<snippet>
+		<content><![CDATA[
+closest('$1')
+]]></content>
+		<tabTrigger>qc</tabTrigger>
+		<scope>source.js</scope>
+		<description>jquery closest</description>
+</snippet>

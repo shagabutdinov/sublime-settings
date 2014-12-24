@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+begin
+	${0:$indented_selection}
+rescue $1
+	$2
+end
+]]></content>
+	<tabTrigger>bm</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

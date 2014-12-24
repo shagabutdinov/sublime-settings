@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+fmt.Fprint(${1:io}, ${2:$indented_selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>ff</tabTrigger>
+	<scope>source.go</scope>
+	<description>fmt fprint</description>
+</snippet>

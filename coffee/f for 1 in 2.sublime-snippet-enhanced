@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+for $1 in ${2:$last_assigned_variable}
+	${0:$indented_selection}
+]]></content>
+	<tabTrigger>f</tabTrigger>
+	<scope>source.coffee</scope>
+	<description>for 1 in 2</description>
+</snippet>

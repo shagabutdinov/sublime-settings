@@ -1,0 +1,8 @@
+<snippet>
+		<content><![CDATA[
+\$success = true;
+]]></content>
+		<tabTrigger>st</tabTrigger>
+		<scope>source.php</scope>
+		<description>success = false</description>
+</snippet>

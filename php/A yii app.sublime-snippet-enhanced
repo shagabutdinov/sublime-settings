@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\Yii::\$app->
+]]></content>
+	<tabTrigger>A</tabTrigger>
+	<scope>source.php</scope>
+  <context>
+    [
+      {"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+    ]
+  </context>
+	<description>Yii::app</description>
+</snippet>

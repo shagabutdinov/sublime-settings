@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[
+<div class="search-form input-group-sm">
+    <div class="modal-dialog search-form-dialog modal-xsm" id="search-form">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title">Поиск</h4>
+                </div>
+                <div class="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-default btn-sm" data-toggle="collapse" data-target="#search-form">Закрыть</button>
+                    <a class="btn btn-sm btn-default" href="#">Сбросить</a>
+                    <button type="button" class="btn btn-primary btn-sm">Искать</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+]]></content>
+	<tabTrigger>bsf</tabTrigger>
+	<scope>text.html</scope>
+	<description>bootstrap search form</description>
+</snippet>

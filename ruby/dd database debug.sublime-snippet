@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+\$idfly.Database._debug() {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>dd</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>database debug</description>
+</snippet>

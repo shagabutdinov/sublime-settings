@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<table>
+	${0:$indented_selection}
+</table>
+]]></content>
+	<tabTrigger>ta</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+</snippet>

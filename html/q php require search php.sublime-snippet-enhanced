@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<?php require '$1.php' ?>
+]]></content>
+	<tabTrigger>q</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<description>php require</description>
+</snippet>

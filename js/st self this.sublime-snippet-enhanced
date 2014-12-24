@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+self = this
+]]></content>
+	<tabTrigger>st</tabTrigger>
+	<scope>source.js</scope>
+	<description>self this</description>
+</snippet>

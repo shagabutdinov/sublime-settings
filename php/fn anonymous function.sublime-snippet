@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+function($1) {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>fn</tabTrigger>
+	<scope>source.php</scope>
+	<description>anonymous function</description>
+</snippet>

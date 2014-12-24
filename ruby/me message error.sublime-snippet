@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+@message.error("${1:message}", ${2:options})
+]]></content>
+	<tabTrigger>me</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

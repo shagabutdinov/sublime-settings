@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+throw new \Exception('${1:$indented_selection}')
+]]></content>
+	<tabTrigger>th</tabTrigger>
+	<scope>source.php</scope>
+	<description>throw new Exception()</description>
+</snippet>

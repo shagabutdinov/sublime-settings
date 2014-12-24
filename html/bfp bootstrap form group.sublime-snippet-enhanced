@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<div class="form-group">
+	<label class="control-label" for="$1">$2</label>
+	$0
+</div>]]></content>
+	<tabTrigger>bfp</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+</snippet>

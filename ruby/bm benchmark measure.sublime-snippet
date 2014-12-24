@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+require 'benchmark'
+puts Benchmark.measure {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>bm</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

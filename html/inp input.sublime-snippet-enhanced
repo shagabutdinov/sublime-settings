@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<input type="${1:text}" name="${2:name}" class="${3:class}" value="${4:value}">]]></content>
+	<tabTrigger>inp</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+</snippet>

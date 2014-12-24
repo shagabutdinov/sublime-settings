@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+func ($this) Copy() ${2:*$type} {
+	newOperation := *operation
+	$0
+	return &newOperation
+}
+]]></content>
+	<tabTrigger>dc</tabTrigger>
+		<eval><![CDATA[{
+	'this': __import__('Utilities').go.find_this_arg(view, True),
+	'type': __import__('Utilities').go.find_this_type(view)
+}]]></eval>
+	<scope>source.go</scope>
+	<description>func copy</description>
+</snippet>

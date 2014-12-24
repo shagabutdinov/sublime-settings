@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+each_with_index
+]]></content>
+	<tabTrigger>eachw</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>each_with_index</description>
+</snippet>

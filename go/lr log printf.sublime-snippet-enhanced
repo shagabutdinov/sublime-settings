@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+log.Printf("$1", ${2:$indented_selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>lr</tabTrigger>
+	<scope>source.go</scope>
+	<description>log printf</description>
+</snippet>

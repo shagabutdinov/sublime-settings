@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$_SERVER['REQUEST_URI']
+]]></content>
+	<tabTrigger>sri</tabTrigger>
+	<scope>source.php</scope>
+	<description>_server request_uri</description>
+</snippet>

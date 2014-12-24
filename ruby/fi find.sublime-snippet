@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+find() { |${1:object1}|
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>fi</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

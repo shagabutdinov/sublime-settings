@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+IdFly.Js.Callback.create(${1:$indented_selection})
+]]></content>
+	<tabTrigger>cc</tabTrigger>
+	<scope>source.js</scope>
+	<description>idfly js callback create</description>
+</snippet>

@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+new \\yii\\data\\ActiveDataProvider([
+    'query' => $1,
+    'pagination' => [
+        'pageSize' => ${2:20},
+    ],
+]);
+]]></content>
+	<tabTrigger>dp</tabTrigger>
+	<scope>source.php</scope>
+	<context>
+		[
+			{"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+		]
+	</context>
+	<description>yii data activedataprovider</description>
+</snippet>

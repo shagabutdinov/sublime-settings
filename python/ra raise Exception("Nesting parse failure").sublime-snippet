@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+raise Exception(${1:$indented_selection})
+]]></content>
+	<tabTrigger>ra</tabTrigger>
+	<scope>source.python</scope>
+	<description>raise Exception("message")</description>
+</snippet>

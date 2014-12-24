@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\Yii::\$app->request->isPost
+]]></content>
+	<tabTrigger>rip</tabTrigger>
+	<scope>source.php</scope>
+	<context>
+		[
+			{"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+		]
+	</context>
+	<description>yii request isPost</description>
+</snippet>

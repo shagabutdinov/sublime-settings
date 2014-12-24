@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+log.Fatal(${1:$indented_selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>lf</tabTrigger>
+	<scope>source.go</scope>
+	<description>log</description>
+</snippet>

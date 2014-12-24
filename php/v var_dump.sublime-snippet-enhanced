@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+var_dump(${1:$indented_selection__or__last_assigned_variable});
+]]></content>
+	<tabTrigger>v</tabTrigger>
+	<scope>source.php</scope>
+	<description></description>
+</snippet>

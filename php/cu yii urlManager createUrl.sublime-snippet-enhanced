@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\Yii::\$app->urlManager->createUrl(${1:$indented_selection})
+]]></content>
+	<tabTrigger>cu</tabTrigger>
+	<scope>source.php</scope>
+	<context>
+		[
+			{"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+		]
+	</context>
+	<description>Yii::app->urlManager->createUrl</description>
+</snippet>

@@ -1,0 +1,36 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+for(var $1Index in $2) {
+	var $3 = $2[$1Index];
+	${0:$TM_SELECTED_TEXT}
+}
+]]>
+		</content>
+		<tabTrigger>f</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "\\.\\s*f$"},
+			]
+		</context>
+		<description>for in</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+find($1)
+]]>
+		</content>
+		<tabTrigger>f</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\.\\s*f$"},
+			]
+		</context>
+		<description>for in</description>
+	</snippet>
+</snippets>

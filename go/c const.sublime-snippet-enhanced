@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+const (
+	${0:$indented_selection}
+)
+]]></content>
+	<tabTrigger>co</tabTrigger>
+	<scope>source.go</scope>
+	<description>const</description>
+</snippet>

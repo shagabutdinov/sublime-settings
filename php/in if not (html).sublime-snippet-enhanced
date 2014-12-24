@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+<?php if(!$1) : ?>
+	${0:$indented_selection}
+<?php endif ?>
+]]></content>
+	<tabTrigger>in</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<context>
+		[
+			{"key": "filename", "operator": "regex_contains", "operand": "\\.php(\\.\\w+)?$"}
+		]
+	</context>
+	<description></description>
+</snippet>

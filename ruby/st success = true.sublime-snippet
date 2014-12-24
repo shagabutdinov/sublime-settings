@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+success = true
+]]></content>
+	<tabTrigger>st</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[return result]]></content>
+	<tabTrigger>rr</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

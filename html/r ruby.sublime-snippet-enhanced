@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<% ${0:$indented_selection} %>
+]]></content>
+	<tabTrigger>r</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<description>ruby</description>
+    <context>
+        [
+            {"key": "filename", "operator": "regex_contains", "operand": "\\.erb(\\.\\w+)?$"}
+        ]
+    </context>
+</snippet>

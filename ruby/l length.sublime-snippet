@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+length
+]]></content>
+	<tabTrigger>l</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>length</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+spy = sinon.spy()
+]]></content>
+	<tabTrigger>uss</tabTrigger>
+	<scope>source.js</scope>
+	<description>var spy sinon spy</description>
+</snippet>

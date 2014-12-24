@@ -1,0 +1,96 @@
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
+if(${1:$last_assigned_variable}) {
+	${0:$indented_selection}
+}
+	]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.js</scope>
+		<commands>
+	    [
+	      {
+	        "command": "run_macro_file",
+	        "args": {
+	        	"file": "Packages/User/macro/select_block_for_snippet.sublime-macro"
+	        },
+	        "context": [
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_128_chars_end", "operator": "regex_contains", "operand": "^[^\\S\n]*\n[^\\S\n]*\\S(?&lt;!})"},
+			]
+	      },
+	      "RUN",
+	    ]
+	  </commands>
+		<description>if</description>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if(${1:$last_assigned_variable}) {
+	${0:$indented_selection}
+}
+	]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.js</scope>
+		<commands>
+	    [
+	      {
+	        "command": "run_macro_file",
+	        "args": {
+	        	"file": "Packages/User/macro/select_block_for_snippet.sublime-macro"
+	        },
+	        "context": [
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_128_chars_end", "operator": "regex_contains", "operand": "^[^\\S\n]*\n[^\\S\n]*\\S"},
+			]
+	      },
+	      "RUN",
+	    ]
+	  </commands>
+		<description>if</description>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": false},
+			]
+		</context>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+if(${1:$indented_selection}) {
+	$0
+}
+]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.js</scope>
+		<commands>
+	    [
+	      {
+	        "command": "run_macro_file",
+	        "args": {
+	        	"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+	        },
+	        "context": [
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+			]
+	      },
+	      "RUN",
+	    ]
+	  </commands>
+	  <context>
+	  	[
+	  		{"key": "selection_empty", "operator": "equal", "operand": true},
+	  		{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+	  	]
+	  </context>
+		<description>if</description>
+	</snippet>
+
+</snippets>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\$options['${1:$indented_selection}']
+]]></content>
+	<tabTrigger>o</tabTrigger>
+	<scope>source.php</scope>
+	<description>$options</description>
+</snippet>

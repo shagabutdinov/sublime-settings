@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if data[${1:$last_assigned_variable}].nil?() || data[${1:$last_assigned_variable}].empty?()
+	${0:$indented_selection}
+end
+]]></content>
+	<tabTrigger>ife</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>if nil or</description>
+</snippet>

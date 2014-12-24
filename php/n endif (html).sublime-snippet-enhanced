@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<?php endif ?>
+]]></content>
+	<tabTrigger>n</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<description>endif</description>
+	<context>
+		[
+			{"key": "filename", "operator": "regex_contains", "operand": "\\.php(\\.\\w+)?$"}
+		]
+	</context>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\$idfly.HtmlMeta.title = "$0"
+]]></content>
+	<tabTrigger>T</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

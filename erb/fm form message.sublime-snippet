@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<div class="Form-message" Form-message="$1"></div>
+]]></content>
+	<tabTrigger>fm</tabTrigger>
+	<scope>text.html.ruby(?!.*source)</scope>
+</snippet>

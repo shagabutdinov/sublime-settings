@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+return \$success;
+]]></content>
+	<tabTrigger>rs</tabTrigger>
+	<scope>source.php</scope>
+	<description>return success</description>
+</snippet>

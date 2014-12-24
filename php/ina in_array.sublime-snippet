@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+in_array(${1:$indented_selection}, $2)
+]]></content>
+	<tabTrigger>ina</tabTrigger>
+	<scope>source.php</scope>
+	<description>in_array</description>
+</snippet>

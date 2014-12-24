@@ -1,0 +1,6 @@
+<snippet>
+	<content><![CDATA[options[:$1]]]></content>
+	<tabTrigger>o</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>options</description>
+</snippet>

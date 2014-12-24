@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[<select class="form-control" id="${2:key}" name="${2:key}">
+	<option></option>
+</select>
+<div class="Form-message" Form-message="${2:key}"></div>]]></content>
+	<tabTrigger>bs</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+</snippet>

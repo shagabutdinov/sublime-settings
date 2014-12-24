@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+[]$1{$2}
+]]></content>
+	<tabTrigger>s</tabTrigger>
+	<scope>source.go</scope>
+	<description>slice</description>
+</snippet>

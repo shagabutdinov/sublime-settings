@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+def update(id, data, options = {})
+	result = super$0
+	return result
+end
+]]></content>
+	<tabTrigger>ddu</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

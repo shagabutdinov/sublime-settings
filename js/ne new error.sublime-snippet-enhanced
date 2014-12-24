@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+new Error(${0:$indented_selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>ne</tabTrigger>
+	<scope>source.js</scope>
+	<description>new error</description>
+</snippet>

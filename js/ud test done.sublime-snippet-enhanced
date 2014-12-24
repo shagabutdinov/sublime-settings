@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+test.done();
+]]></content>
+	<tabTrigger>ud</tabTrigger>
+	<scope>source.js</scope>
+	<description>test done</description>
+</snippet>

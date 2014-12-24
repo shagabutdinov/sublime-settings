@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<? ActiveForm::end() ?>
+]]></content>
+	<tabTrigger>fe</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<context>
+		[
+			{"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+		]
+	</context>
+	<description>ActiveForm end</description>
+</snippet>

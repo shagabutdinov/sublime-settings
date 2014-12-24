@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+assert(!${1:expression})
+]]></content>
+
+ <tabTrigger>taf</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

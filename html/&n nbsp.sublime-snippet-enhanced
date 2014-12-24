@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+&nbsp;
+]]></content>
+	<tabTrigger>&amp;n</tabTrigger>
+	<scope>text.html</scope>
+	<description>nbsp</description>
+</snippet>

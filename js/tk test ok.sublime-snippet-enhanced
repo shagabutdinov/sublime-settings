@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+test.ok(${1:$indented_selection});
+]]></content>
+	<tabTrigger>tk</tabTrigger>
+	<scope>source.js</scope>
+	<description>test ok</description>
+</snippet>

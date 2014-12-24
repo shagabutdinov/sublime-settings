@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+@object
+]]></content>
+ <tabTrigger>to</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

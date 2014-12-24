@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+'$1': function(test) {
+  $0
+  test.done();
+},
+]]></content>
+	<tabTrigger>td</tabTrigger>
+	<scope>source.js</scope>
+	<description>define test</description>
+</snippet>

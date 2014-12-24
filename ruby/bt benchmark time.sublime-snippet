@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+__time = Time.now.to_f
+	${0:$indented_selection}
+p ( Time.now.to_f - __time ).round( 5 )
+]]></content>
+	<tabTrigger>bt</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

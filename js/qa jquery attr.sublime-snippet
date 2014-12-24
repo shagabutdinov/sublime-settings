@@ -1,0 +1,8 @@
+<snippet>
+		<content><![CDATA[
+attr('$1')
+]]></content>
+		<tabTrigger>qa</tabTrigger>
+		<scope>source.js</scope>
+		<description>jquery attr</description>
+</snippet>

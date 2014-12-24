@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+include IdFly::Config::Configurable
+
+def self._config(config, kernel)
+	return {
+		$0
+	}
+end
+
+def initialize(options = {})
+
+end
+]]></content>
+	<tabTrigger>iCC</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

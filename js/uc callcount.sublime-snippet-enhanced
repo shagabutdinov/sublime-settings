@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+callCount
+]]></content>
+	<tabTrigger>uc</tabTrigger>
+	<scope>source.js</scope>
+	<description>callcount</description>
+</snippet>

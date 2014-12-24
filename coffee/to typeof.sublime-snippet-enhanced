@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+typeof $0
+]]></content>
+	<tabTrigger>to</tabTrigger>
+	<scope>source.coffee</scope>
+	<description>typeof</description>
+</snippet>

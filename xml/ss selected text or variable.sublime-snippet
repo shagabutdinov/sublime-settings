@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+\${${1:0}:\$indented_selection__or__last_assigned_variable}
+]]></content>
+  <tabTrigger>s</tabTrigger>
+  <scope>text.xml</scope>
+  <description>selected text</description>
+</snippet>

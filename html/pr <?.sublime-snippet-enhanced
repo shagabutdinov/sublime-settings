@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<? require ${0:$indented_selection} ?>
+]]></content>
+	<tabTrigger>pr</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<description>&lt;?</description>
+</snippet>

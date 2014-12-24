@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+class ${1:$class}
+  $0
+end
+  ]]></content>
+  <tabTrigger>C</tabTrigger>
+  <scope>source.ruby(?!.*source)</scope> // allow only in html but not in source code
+  <description>class</description>
+  <eval><![CDATA[
+{'class': view.file_name() and __import__('re').sub(r'^.*/(.*)\.\w+$', '\\1', view.file_name()).title() or ''}
+]]></eval>
+</snippet>

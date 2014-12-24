@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+public function __construct() {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>pi</tabTrigger>
+	<scope>source.php</scope>
+	<description>public function __construct</description>
+</snippet>

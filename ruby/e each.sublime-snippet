@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+each() { |${1:object1}|
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>e</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<?= \$this->context->renderPartial('${1:$indented_selection__or__last_assigned_variable}') ?>
+]]></content>
+	<tabTrigger>rp</tabTrigger>
+    <description>renderPartial</description>
+    <scope>text.html(?!.*source)</scope>
+    <context>
+        [
+            {"key": "filename", "operator": "regex_contains", "operand": "\\.php(\\.\\w+)?$"},
+            {"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+        ]
+    </context>
+</snippet>

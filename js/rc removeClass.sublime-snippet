@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+removeClass(${0:$indented_selection})
+]]></content>
+	<tabTrigger>rc</tabTrigger>
+	<scope>source.js</scope>
+	<description>removeClass</description>
+</snippet>

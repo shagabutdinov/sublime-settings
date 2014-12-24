@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+callback
+]]></content>
+	<tabTrigger>k</tabTrigger>
+	<scope>source.js</scope>
+	<description>callback</description>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\$idfly.Message.warning("${2:message}", ${3:options})
+]]></content>
+	<tabTrigger>kmw</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

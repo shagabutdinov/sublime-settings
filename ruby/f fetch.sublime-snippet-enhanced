@@ -1,0 +1,29 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+	fetch(${1:$last_assigned_variable})
+	]]></content>
+		<tabTrigger>f</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\.\\s*f$"},
+			]
+		</context>
+		<description>fetch value</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+	fetch(${1:$indented_selection})
+	]]></content>
+		<tabTrigger>f</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": false},
+			]
+		</context>
+		<description>fetch value</description>
+	</snippet>
+</snippets>

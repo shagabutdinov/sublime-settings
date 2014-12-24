@@ -1,0 +1,10 @@
+<snippet>
+		<content><![CDATA[
+test.tearDown = function() {
+$0
+}
+]]></content>
+		<tabTrigger>tdd</tabTrigger>
+		<scope>source.js</scope>
+		<description></description>
+</snippet>

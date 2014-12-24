@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+<? ${1:\$form = }ActiveForm::begin() ?>
+]]></content>
+	<tabTrigger>fb</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<context>
+		[
+			{"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+		]
+	</context>
+	<commands>
+		[
+			{
+				"command": "create_keyword",
+				"args": {"keyword_type": "php.use", "keyword": "yii\\widgets\\ActiveForm"},
+			},
+			"RUN",
+		]
+	</commands>
+	<description>yii ActiveForm begin</description>
+</snippet>

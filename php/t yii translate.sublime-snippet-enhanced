@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\Yii::t('${1:app}', ${2:$indented_selection})
+]]></content>
+	<tabTrigger>t</tabTrigger>
+	<scope>source.php</scope>
+	<context>
+		[
+			{"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+		]
+	</context>
+	<description>yii translate</description>
+</snippet>

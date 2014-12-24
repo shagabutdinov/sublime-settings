@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+if ${1:$last_assigned_variable} == $2
+	${0:$indented_selection}
+end
+]]></content>
+	<tabTrigger>iq</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

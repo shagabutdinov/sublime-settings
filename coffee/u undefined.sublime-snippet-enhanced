@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+undefined
+]]></content>
+	<tabTrigger>u</tabTrigger>
+	<scope>source.coffee</scope>
+	<description>undefined</description>
+</snippet>

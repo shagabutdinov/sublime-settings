@@ -1,0 +1,12 @@
+<snippet>
+		<content><![CDATA[
+IdFly.${1:namespace}Test.${2:class} = TestCase('IdFly.${1:namespace}.${2:class}');
+
+(function() {
+	var test = IdFly.${1:namespace}Test.${2:class}.prototype;
+})();
+]]></content>
+		<tabTrigger>tc</tabTrigger>
+		<scope>source.js</scope>
+		<description></description>
+</snippet>

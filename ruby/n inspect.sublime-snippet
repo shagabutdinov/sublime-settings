@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+inspect()
+]]></content>
+	<tabTrigger>n</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

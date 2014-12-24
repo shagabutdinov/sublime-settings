@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+\\Yii::\$app->db->quoteValue(${1:$indented_selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>dq</tabTrigger>
+	<scope>source.php</scope>
+	<description>yii app db quotevalue</description>
+</snippet>

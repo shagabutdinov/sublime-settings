@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+assert_raises(${1:expected}) {
+	$0
+}
+]]></content>
+	<tabTrigger>tar</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

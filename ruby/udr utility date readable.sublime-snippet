@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\$idfly.UtilityDate.readable(${0:$indented_selection})
+]]></content>
+	<tabTrigger>udr</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

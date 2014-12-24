@@ -1,0 +1,8 @@
+<snippet>
+		<content><![CDATA[
+callback = new IdFly.Javascript.Callback(${1:true})
+]]></content>
+		<tabTrigger>cn</tabTrigger>
+		<scope>source.js</scope>
+		<description></description>
+</snippet>

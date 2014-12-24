@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+import (
+  "$0"
+)
+]]></content>
+	<tabTrigger>im</tabTrigger>
+	<scope>source.go</scope>
+	<description>import</description>
+</snippet>

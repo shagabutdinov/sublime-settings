@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+date($1, ${2:$indented_selection})
+]]></content>
+	<tabTrigger>d</tabTrigger>
+	<scope>source.php(?!.*string)</scope>
+	<description>date</description>
+</snippet>

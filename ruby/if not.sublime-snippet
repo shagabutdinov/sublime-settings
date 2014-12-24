@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if !${1:$last_assigned_variable}
+	${0:$indented_selection}
+end
+]]></content>
+	<tabTrigger>in</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>if … end</description>
+</snippet>

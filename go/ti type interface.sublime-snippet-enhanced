@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+type $1 interface {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>ti</tabTrigger>
+	<scope>source.go</scope>
+	<description>type interface</description>
+</snippet>

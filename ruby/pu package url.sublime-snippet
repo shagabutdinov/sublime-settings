@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\$idfly.Package.url(${1::Site}, '${2:tail}')
+]]></content>
+	<tabTrigger>pu</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

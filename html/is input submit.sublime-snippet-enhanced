@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[<input type="submit" class="$1" value="$2">]]></content>
+	<tabTrigger>is</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+</snippet>

@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[${1:object} = mock()]]></content>
+	<tabTrigger>um</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

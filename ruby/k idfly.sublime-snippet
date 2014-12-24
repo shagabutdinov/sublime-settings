@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+\$idfly.
+]]></content>
+	<tabTrigger>k</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

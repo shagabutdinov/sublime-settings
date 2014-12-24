@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+<input type="$1" class="$2" name="$3" id="${4:$3}" value="$5" />
+]]></content>
+	<tabTrigger>ic</tabTrigger>
+	<scope>text.html</scope>
+	<description>input class</description>
+</snippet>

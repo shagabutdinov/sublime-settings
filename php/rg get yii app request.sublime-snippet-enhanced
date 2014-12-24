@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+\Yii::\$app->request->get(${1:$indented_selection})
+]]></content>
+	<tabTrigger>rg</tabTrigger>
+	<scope>source.php</scope>
+	<context>
+		[
+			{"key": "settings.frameworks", "operator": "regex_contains", "operand": "'yii'"},
+		]
+	</context>
+	<description>yii app request</description>
+</snippet>

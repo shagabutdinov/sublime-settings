@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+unbind('${1:click}').
+on('${1:click}', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $0
+});
+]]></content>
+	<tabTrigger>ub</tabTrigger>
+	<scope>source.js</scope>
+	<description>ubind bind</description>
+</snippet>

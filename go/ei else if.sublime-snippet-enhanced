@@ -1,0 +1,10 @@
+<snippet>
+  <content><![CDATA[
+else if ${1:$last_assigned_variable} {
+  ${0:$indented_selection}
+}
+]]></content>
+  <tabTrigger>ei</tabTrigger>
+  <scope>source.go</scope>
+  <description>else</description>
+</snippet>

@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+if ${1:$last_assigned_variable} == nil {
+	${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>ii</tabTrigger>
+	<scope>source.go</scope>
+	<description>if equal nil</description>
+</snippet>

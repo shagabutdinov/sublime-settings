@@ -1,0 +1,58 @@
+<snippets>
+	<snippet>
+	    <content><![CDATA[
+attr(${1:$indented_selection__or__last_assigned_variable})
+]]></content>
+	    <tabTrigger>a</tabTrigger>
+	    <scope>source.js</scope>
+	    <context>
+	    	[
+	    		{"key": "selection_empty", "operator": "equal", "operand": true},
+	    		{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\S.*a$"},
+	    	]
+	    </context>
+	    <description>attr</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+alert(${1:$indented_selection__or__last_assigned_variable})
+]]></content>
+		<tabTrigger>a</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*a$"},
+			]
+		</context>
+		<description>log</description>
+	</snippet>
+	<snippet>
+	    <content><![CDATA[
+attr(${1:$indented_selection__or__last_assigned_variable})
+]]></content>
+	    <tabTrigger>a</tabTrigger>
+	    <scope>source.js</scope>
+	    <context>
+	    	[
+	    		{"key": "selection_empty", "operator": "equal", "operand": false},
+	    		{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\S.*$"},
+	    	]
+	    </context>
+	    <description>attr</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+alert(${1:$indented_selection__or__last_assigned_variable})
+]]></content>
+		<tabTrigger>a</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": false},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>log</description>
+	</snippet>
+</snippets>

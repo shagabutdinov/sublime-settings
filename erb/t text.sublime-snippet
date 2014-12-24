@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<%= \$idfly.UtilityHtml.text($0) %>
+]]></content>
+	<tabTrigger>t</tabTrigger>
+	<scope>text.html.ruby(?!.*source)</scope>
+</snippet>

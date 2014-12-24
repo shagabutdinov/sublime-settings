@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+return nil if !
+]]></content>
+	<tabTrigger>rnn</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

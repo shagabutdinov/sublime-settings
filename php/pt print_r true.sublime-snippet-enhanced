@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[
+print_r(${1:$indented_selection__or__last_assigned_variable}, true)
+]]></content>
+    <tabTrigger>pt</tabTrigger>
+    <scope>source.php</scope>
+    <description>print_r true</description>
+</snippet>

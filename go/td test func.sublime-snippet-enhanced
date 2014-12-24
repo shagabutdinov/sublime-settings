@@ -1,0 +1,10 @@
+<snippet>
+    <content><![CDATA[
+func Test${1:name}(test *testing.T) {
+  ${0:$indented_selection}
+}
+]]></content>
+    <tabTrigger>td</tabTrigger>
+    <scope>source.go</scope>
+    <description>func this</description>
+</snippet>

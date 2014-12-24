@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[\$idfly.Utility.bykeys($1, $2)]]></content>
+	<tabTrigger>ubk</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

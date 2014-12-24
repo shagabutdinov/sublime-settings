@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+file_put_contents(${1:$indented_selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>fp</tabTrigger>
+	<scope>source.php</scope>
+	<description>file_put_contents</description>
+</snippet>

@@ -1,0 +1,26 @@
+<snippet>
+	<content><![CDATA[
+<section class="panel">
+    <?php \$form = idfly\\porto\\ActiveForm::begin() ?>
+    <div class="panel-heading">
+        <h2 class="panel-title">Изменить $1 "<?= \\yii\\helpers\\Html::encode(
+            $2
+        ) ?>"</h2>
+    </div>
+    <div class="panel-body">
+        <?php require 'form.php' ?>
+    </div>
+    <div class="panel-footer">
+        <div class="form-group">
+            <div class="col-sm-6 col-md-offset-3">
+                <button class="btn btn-primary" type="submit">Сохранить</button>
+            </div>
+        </div>
+    </div>
+    <?php idfly\\porto\\ActiveForm::end() ?>
+</section>
+]]></content>
+	<tabTrigger>bfu</tabTrigger>
+	<scope>text.html</scope>
+	<description>bootstrap form update</description>
+</snippet>

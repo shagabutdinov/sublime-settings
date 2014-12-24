@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+for ${1:varname}Index, ${1:varname}Value := range ${2:$last_assigned_variable} {
+  ${0:$indented_selection}
+}
+]]></content>
+	<tabTrigger>fi</tabTrigger>
+	<scope>source.go</scope>
+	<description>for with index</description>
+</snippet>

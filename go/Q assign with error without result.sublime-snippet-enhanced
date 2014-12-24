@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+_, $1Error := ${2:$indented_selection}
+if $1Error != nil {
+    $0
+}
+]]></content>
+    <tabTrigger>Q</tabTrigger>
+    <scope>source.go</scope>
+    <description>assign with error without result</description>
+</snippet>

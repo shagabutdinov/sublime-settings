@@ -1,0 +1,8 @@
+<snippet>
+		<content><![CDATA[
+sinon.stub($0);
+]]></content>
+		<tabTrigger>tss</tabTrigger>
+		<scope>source.js</scope>
+		<description></description>
+</snippet>

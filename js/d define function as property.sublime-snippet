@@ -1,0 +1,10 @@
+<snippet>
+		<content><![CDATA[
+${1:name}: function(${2:arguments}) {
+${0}
+}
+]]></content>
+		<tabTrigger>d</tabTrigger>
+		<scope>source.js</scope>
+		<description></description>
+</snippet>

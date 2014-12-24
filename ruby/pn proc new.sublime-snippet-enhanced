@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+Proc.new() { |$1| ${0:$indented_selection} }
+]]></content>
+	<tabTrigger>pn</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>proc new</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+get_class(${1:$indented_selection})
+]]></content>
+	<tabTrigger>gc</tabTrigger>
+	<scope>source.php</scope>
+	<description>get_class</description>
+</snippet>

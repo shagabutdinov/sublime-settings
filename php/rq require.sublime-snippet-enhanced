@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+require '$1';
+]]></content>
+	<tabTrigger>rq</tabTrigger>
+	<scope>source.php</scope>
+	<description>require</description>
+</snippet>

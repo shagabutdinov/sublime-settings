@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+$1: _get_service(config, kernel, :$1$2)
+]]></content>
+	<tabTrigger>sg</tabTrigger>
+	<scope>source.ruby</scope>
+</snippet>

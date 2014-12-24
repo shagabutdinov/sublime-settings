@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+var ${1:varname} ${2:vartype}
+]]></content>
+	<tabTrigger>v</tabTrigger>
+	<scope>source.go</scope>
+	<description>var</description>
+</snippet>
