@@ -1,0 +1,41 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+stubs($1)
+]]></content>
+		<tabTrigger>t</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\.\\s*t$"},
+			]
+		</context>
+		<description>stubs</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+.stubs($1)
+]]></content>
+		<tabTrigger>t</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\)t$"},
+			]
+		</context>
+		<description>.stubs</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+true
+]]></content>
+		<tabTrigger>t</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "[^\\.\\)]\\s*t$"},
+			]
+		</context>
+		<description>next</description>
+	</snippet>
+</snippets>

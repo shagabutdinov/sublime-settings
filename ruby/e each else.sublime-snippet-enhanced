@@ -1,0 +1,39 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+each() { |${1:object1}|
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>e</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\.\\s*e$"},
+			]
+		</context>
+		<description>each</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+else
+	$0
+]]></content>
+		<tabTrigger>e</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "[^\\.]\\s*e$"},
+			]
+		</context>
+		<commands>
+			[
+	      {
+	        "command": "left_delete",
+	      },
+	      "RUN",
+	    ]
+		</commands>
+		<description>else</description>
+	</snippet>
+</snippets>

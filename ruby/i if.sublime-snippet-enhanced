@@ -1,0 +1,88 @@
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable}
+	${0:$selection}
+end
+]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<commands>
+			[
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_block_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+						{"key": "following_128_chars_end", "operator": "regex_contains", "operand": "^[^\\S\n]*\n[^\\S\n]*\\S(?&lt;!})"},
+						{"key": "following_128_chars_end", "operator": "not_regex_contains", "operand": "^\\s*end"},
+					]
+				},
+				"RUN",
+				{
+					"command": "delete_next_line",
+					"context": [
+						{"key": "following_128_chars_end", "operator": "not_regex_contains", "operand": "^\\w*\\s*end"},
+					]
+				}
+			]
+		</commands>
+		<description>if</description>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable}
+	${0:$selection}
+end
+]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<description>if</description>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": false},
+			]
+		</context>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+if ${1:$selection}
+	$0
+end
+]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<commands>
+			[
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if</description>
+	</snippet>
+
+</snippets>

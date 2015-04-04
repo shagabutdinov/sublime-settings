@@ -1,0 +1,8 @@
+<snippet>
+  <content><![CDATA[
+end_with?(${1:$selection__or__last_assigned_variable})
+]]></content>
+  <tabTrigger>ew</tabTrigger>
+  <scope>source.ruby</scope>
+  <description>start_with</description>
+</snippet>

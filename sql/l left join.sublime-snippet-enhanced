@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+LEFT JOIN `$1`$2 ON $1.id = `$3`.`$4`
+]]></content>
+	<tabTrigger>l</tabTrigger>
+	<scope>source.sql</scope>
+	<description>left join</description>
+</snippet>

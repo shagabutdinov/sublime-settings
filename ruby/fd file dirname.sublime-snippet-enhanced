@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+File.dirname(${1:$selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>fd</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>file dirname</description>
+</snippet>

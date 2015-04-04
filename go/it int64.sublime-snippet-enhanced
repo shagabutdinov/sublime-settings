@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+int64
+]]></content>
+	<tabTrigger>it</tabTrigger>
+	<scope>source.go</scope>
+	<description>int64</description>
+</snippet>

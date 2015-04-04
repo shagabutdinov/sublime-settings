@@ -1,0 +1,63 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+sinon.stub(${1:$selection});
+]]></content>
+		<tabTrigger>ss</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "^\\s*ss$"},
+				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": ":\\s*ss$"},
+				{"key": "following_text_end", "operator": "regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>sinon stub</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+sinon.stub(${1:$selection})
+]]></content>
+		<tabTrigger>ss</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "^\\s*ss$"},
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>sinon stub</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+sinon.stub(${1:$selection}),
+]]></content>
+		<tabTrigger>ss</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": ":\\s*ss$"},
+				{"key": "following_text_end", "operator": "regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>sinon stub</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+sinon.stub(${1:$selection__or__last_assigned_variable}, '$2');
+]]></content>
+		<tabTrigger>ss</tabTrigger>
+		<scope>source.js</scope>
+		<context>
+			[
+			{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*ss$"},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "(?&lt;!\\)\\s)(\\{|,)\\s*ss$"},
+				{"key": "following_text_end", "operator": "regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>sinon stub</description>
+	</snippet>
+</snippets>

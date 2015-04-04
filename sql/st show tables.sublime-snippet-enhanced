@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+SHOW TABLES;
+]]></content>
+	<tabTrigger>st</tabTrigger>
+	<scope>source.sql</scope>
+	<description>show tables</description>
+</snippet>

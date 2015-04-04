@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+fmt.Print(${1:$selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>fp</tabTrigger>
+	<scope>source.go</scope>
+	<description>fmtp println</description>
+</snippet>

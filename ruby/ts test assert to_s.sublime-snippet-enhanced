@@ -1,0 +1,28 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+to_s()
+]]></content>
+		<tabTrigger>ts</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\.\\s*ts$"},
+			]
+		</context>
+		<description>each</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+assert() { ${0:$selection__or__last_assigned_variable} }
+]]></content>
+		<tabTrigger>ts</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "[^\\.]\\s*ts$"},
+			]
+		</context>
+		<description>else</description>
+	</snippet>
+</snippets>

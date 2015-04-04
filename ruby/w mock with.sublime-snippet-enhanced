@@ -1,0 +1,28 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+with($1)
+]]></content>
+		<tabTrigger>w</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\.\\s*w$"},
+			]
+		</context>
+		<description>with</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+.with($1)
+]]></content>
+		<tabTrigger>w</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\)w$"},
+			]
+		</context>
+		<description>.with</description>
+	</snippet>
+</snippets>

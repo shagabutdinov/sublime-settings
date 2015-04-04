@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+@$1 = stub()
+]]></content>
+	<tabTrigger>us</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>test stub</description>
+</snippet>

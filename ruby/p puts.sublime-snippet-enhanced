@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+puts(${1:$selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>p</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>puts</description>
+</snippet>

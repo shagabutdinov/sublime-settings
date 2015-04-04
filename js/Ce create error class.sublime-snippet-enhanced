@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+IdFly.Js.Class.createError('IdFly.Js.$1.Error', {});
+]]></content>
+	<tabTrigger>Ce</tabTrigger>
+	<scope>source.js</scope>
+	<description>create error class</description>
+</snippet>

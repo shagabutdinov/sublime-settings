@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+!== null
+]]></content>
+	<tabTrigger>nn</tabTrigger>
+	<scope>source.js</scope>
+	<description>not equal to null</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+File.realpath(${1:$selection__or__last_assigned_variable})
+]]></content>
+	<tabTrigger>fr</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>file realpath</description>
+</snippet>

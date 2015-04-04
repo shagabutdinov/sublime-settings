@@ -1,0 +1,41 @@
+<snippets>
+	<snippet>
+		<content><![CDATA[
+returns($1)
+]]></content>
+		<tabTrigger>r</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\.\\s*r$"},
+			]
+		</context>
+		<description>returns</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+.returns($1)
+]]></content>
+		<tabTrigger>r</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\)r$"},
+			]
+		</context>
+		<description>.returns</description>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+return ${1:$last_assigned_variable}
+]]></content>
+		<tabTrigger>r</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "[^\\.\\)]\\s*r$"},
+			]
+		</context>
+		<description>return</description>
+	</snippet>
+</snippets>
