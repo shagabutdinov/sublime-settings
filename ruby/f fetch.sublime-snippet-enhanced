@@ -15,7 +15,7 @@
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-	fetch(${1:$indented_selection})
+	fetch(${1:$selection})
 	]]></content>
 		<tabTrigger>f</tabTrigger>
 		<scope>source.ruby</scope>

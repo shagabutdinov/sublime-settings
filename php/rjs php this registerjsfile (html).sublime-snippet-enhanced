@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<?php \$this->registerJsFile('${1:$indented_selection}', ['depends' => ['app\\assets\\AppAsset']]); ?>
+<?php \$this->registerJsFile('${1:$selection}', ['depends' => ['app\\assets\\AppAsset']]); ?>
 ]]></content>
 	<tabTrigger>rjs</tabTrigger>
 	<scope>text.html(?!.*source)</scope>

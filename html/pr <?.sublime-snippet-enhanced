@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<? require ${0:$indented_selection} ?>
+<? require ${0:$selection} ?>
 ]]></content>
 	<tabTrigger>pr</tabTrigger>
 	<scope>text.html(?!.*source)</scope>

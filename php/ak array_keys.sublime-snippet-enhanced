@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-array_keys(${1:$indented_selection})
+array_keys(${1:$selection})
 ]]></content>
 	<tabTrigger>ak</tabTrigger>
 	<scope>source.php</scope>

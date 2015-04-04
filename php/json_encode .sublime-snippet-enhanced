@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-json_encode(${1:$indented_selection__or__last_assigned_variable})
+json_encode(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	<tabTrigger>je</tabTrigger>
 	<scope>source.php</scope>

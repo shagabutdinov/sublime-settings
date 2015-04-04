@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-test.deepEqual(${1:expected}, ${2:actual});
-]]></content>
-  <tabTrigger>tq</tabTrigger>
-  <scope>source.js</scope>
-  <description>test strictEqual</description>
-</snippet>

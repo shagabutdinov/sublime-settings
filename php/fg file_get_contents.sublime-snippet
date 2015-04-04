@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-file_get_contents(${1:$indented_selection})
+file_get_contents(${1:$selection})
 ]]></content>
 	<tabTrigger>fg</tabTrigger>
 	<scope>source.php</scope>

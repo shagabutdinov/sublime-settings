@@ -15,7 +15,7 @@ float64
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-float64(${1:$indented_selection__or__last_assigned_variable})
+float64(${1:$selection__or__last_assigned_variable})
 ]]></content>
 		<tabTrigger>fo</tabTrigger>
 		<scope>source.go</scope>
@@ -28,7 +28,7 @@ float64(${1:$indented_selection__or__last_assigned_variable})
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-float64(${1:$indented_selection})
+float64(${1:$selection})
 ]]></content>
 		<tabTrigger>fo</tabTrigger>
 		<scope>source.go</scope>

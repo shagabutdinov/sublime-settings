@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 <div class="row">
-	${0:$indented_selection}
+	${0:$selection}
 </div>]]></content>
 	<tabTrigger>br</tabTrigger>
 	<scope>text.html(?!.*source)</scope>

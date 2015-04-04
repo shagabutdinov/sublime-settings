@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var_dump(${1:$indented_selection__or__last_assigned_variable}); die();
+var_dump(${1:$selection__or__last_assigned_variable}); die();
 ]]></content>
 	<tabTrigger>vd</tabTrigger>
 	<scope>source.php</scope>

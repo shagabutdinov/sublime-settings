@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-IdFly.Js.Callback.create(${1:$indented_selection})
+callCount
 ]]></content>
 	<tabTrigger>cc</tabTrigger>
 	<scope>source.js</scope>

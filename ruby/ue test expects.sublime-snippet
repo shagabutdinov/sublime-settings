@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-expects(:${1:method})
-]]></content>
-	<tabTrigger>ue</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-success
-]]></content>
-	<tabTrigger>ss</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

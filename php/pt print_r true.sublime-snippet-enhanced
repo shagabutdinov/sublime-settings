@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-print_r(${1:$indented_selection__or__last_assigned_variable}, true)
+print_r(${1:$selection__or__last_assigned_variable}, true)
 ]]></content>
     <tabTrigger>pt</tabTrigger>
     <scope>source.php</scope>

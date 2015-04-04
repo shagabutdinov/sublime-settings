@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-sinon.spy()
-]]></content>
-	<tabTrigger>us</tabTrigger>
-	<scope>source.js</scope>
-	<description>sinon spy</description>
-</snippet>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-reversed(${1:$indented_selection})
+reversed(${1:$selection})
 ]]></content>
 	<tabTrigger>r</tabTrigger>
 	<scope>source.python</scope>

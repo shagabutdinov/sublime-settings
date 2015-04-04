@@ -1,7 +1,7 @@
 <snippet>
     <content><![CDATA[
 func ${1:name}(${2:args})$3 {
-  ${0:$indented_selection}
+  ${0:$selection}
 }
 ]]></content>
     <tabTrigger>u</tabTrigger>

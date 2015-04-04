@@ -2,7 +2,7 @@
 	<content><![CDATA[
 def self._import(helper)
   return {
-    ${0:$indented_selection}
+    ${0:$selection}
   }
 end
 ]]></content>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-is_array(${1:$indented_selection})
+is_array(${1:$selection})
 ]]></content>
 	<tabTrigger>ia</tabTrigger>
 	<scope>source.php</scope>

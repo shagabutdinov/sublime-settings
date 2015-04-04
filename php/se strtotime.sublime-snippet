@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-strtotime(${1:$indented_selection})
+strtotime(${1:$selection})
 ]]></content>
 	<tabTrigger>se</tabTrigger>
 	<scope>source.php</scope>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-hasOwnProperty(${0:$indented_selection__or__last_assigned_variable})
+hasOwnProperty(${0:$selection__or__last_assigned_variable})
 ]]></content>
 	<tabTrigger>h</tabTrigger>
 	<scope>source.coffee</scope>

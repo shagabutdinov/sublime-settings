@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-JSON.stringify($1)
-]]></content>
-		<tabTrigger>js</tabTrigger>
-		<scope>source.js</scope>
-		<description>json stringify</description>
-</snippet>

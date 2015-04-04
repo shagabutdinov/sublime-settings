@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-element
-]]></content>
-		<tabTrigger>et</tabTrigger>
-		<scope>source.js</scope>
-		<description></description>
-</snippet>

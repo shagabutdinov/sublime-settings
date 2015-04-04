@@ -2,6 +2,6 @@
 	<content><![CDATA[
 IdFly::${1:module}::${2:class}
 ]]></content>
-	<tabTrigger>ic</tabTrigger>
+	<tabTrigger>I</tabTrigger>
 	<scope>source.ruby</scope>
 </snippet>

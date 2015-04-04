@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-get_class(${1:$indented_selection})
+get_class(${1:$selection})
 ]]></content>
 	<tabTrigger>gc</tabTrigger>
 	<scope>source.php</scope>

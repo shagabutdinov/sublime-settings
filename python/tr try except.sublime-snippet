@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 try:
-	${0:$indented_selection}
+	${0:$selection}
 except $1:
 	$2
 ]]></content>

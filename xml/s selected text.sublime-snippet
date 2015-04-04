@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\${${1:0}:\$indented_selection}
-]]></content>
-	<tabTrigger>ss</tabTrigger>
-	<scope>text.xml</scope>
-	<description>selected text</description>
-</snippet>

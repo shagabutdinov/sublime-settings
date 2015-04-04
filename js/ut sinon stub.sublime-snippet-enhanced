@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-sinon.stub()
-]]></content>
-	<tabTrigger>ut</tabTrigger>
-	<scope>source.js</scope>
-	<description>sinon stub</description>
-</snippet>

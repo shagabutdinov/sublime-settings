@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-hasClass(${1:$indented_selection__or__last_assigned_variable})
+hasClass(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	<tabTrigger>hc</tabTrigger>
 	<scope>source.js</scope>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-log.Fatal(${1:$indented_selection__or__last_assigned_variable})
+log.Fatal(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	<tabTrigger>lf</tabTrigger>
 	<scope>source.go</scope>

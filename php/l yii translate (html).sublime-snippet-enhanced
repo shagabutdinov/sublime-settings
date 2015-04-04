@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<?= \\Yii::t('${1:app}', '${0:$indented_selection}') ?>
+<?= \\Yii::t('${1:app}', '${0:$selection}') ?>
 ]]></content>
 	<tabTrigger>l</tabTrigger>
 	<scope>text.html(?!.*source)</scope>

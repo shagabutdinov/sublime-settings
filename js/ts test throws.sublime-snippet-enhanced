@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-test.throws(${0:$indented_selection});
-]]></content>
-	<tabTrigger>ts</tabTrigger>
-	<scope>source.js</scope>
-	<description>test throws</description>
-</snippet>

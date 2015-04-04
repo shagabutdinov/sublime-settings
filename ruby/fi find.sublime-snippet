@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 find() { |${1:object1}|
-	${0:$indented_selection}
+	${0:$selection}
 }
 ]]></content>
 	<tabTrigger>fi</tabTrigger>

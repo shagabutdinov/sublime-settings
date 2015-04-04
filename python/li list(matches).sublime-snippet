@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-list(${0:$indented_selection})
+list(${0:$selection})
 ]]></content>
 	<tabTrigger>li</tabTrigger>
 	<scope>source.python</scope>

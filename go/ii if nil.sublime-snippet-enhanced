@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 if ${1:$last_assigned_variable} == nil {
-	${0:$indented_selection}
+	${0:$selection}
 }
 ]]></content>
 	<tabTrigger>ii</tabTrigger>

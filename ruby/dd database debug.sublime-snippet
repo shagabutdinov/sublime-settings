@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 \$idfly.Database._debug() {
-	${0:$indented_selection}
+	${0:$selection}
 }
 ]]></content>
 	<tabTrigger>dd</tabTrigger>

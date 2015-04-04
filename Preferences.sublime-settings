@@ -13,7 +13,7 @@
 	],
 	"auto_complete_with_fields": false,
 	"auto_indent": true,
-	"auto_match_enabled": true,
+	"auto_match_enabled": false,
 	"binary_file_patterns":
 	[
 		"*.jpg",
@@ -92,12 +92,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
+		"Theme - Centurion Blue",
 		"Tabright",
-		"Theme - Cyanide",
 		"PHP Modern",
-		"Better CoffeeScript",
-		"Vintage",
-		"Theme - Centurion Blue"
+		"Theme - Cyanide",
+		"Vintage"
 	],
 	"indent_guide_options":
 	[

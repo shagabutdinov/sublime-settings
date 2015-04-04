@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 class $1${2: extends $3} {
-	${0:$indented_selection}
+	${0:$selection}
 }
 ]]></content>
 	<tabTrigger>C</tabTrigger>

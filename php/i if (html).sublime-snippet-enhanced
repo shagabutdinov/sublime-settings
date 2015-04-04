@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 <?php if($1): ?>
-	${0:$indented_selection}
+	${0:$selection}
 <?php endif ?>
 ]]></content>
 	<tabTrigger>i</tabTrigger>

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-path.$1(${2:$indented_selection})
+path.$1(${2:$selection})
 ]]></content>
 	<tabTrigger>pa</tabTrigger>
 	<scope>source.python</scope>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-import(:${1:$indented_selection}) { |helper| helper.config[:${2:${1:$indented_selection}}] }
-]]></content>
-	<tabTrigger>imc</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

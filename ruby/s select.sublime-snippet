@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 select() { |${1:object1}|
-	${0:$indented_selection}
+	${0:$selection}
 }
 ]]></content>
 	<tabTrigger>s</tabTrigger>

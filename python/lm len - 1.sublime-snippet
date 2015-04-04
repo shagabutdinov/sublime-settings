@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-len(${1:$indented_selection}) - 1
+len(${1:$selection}) - 1
 ]]></content>
 	<tabTrigger>lm</tabTrigger>
 	<scope>source.python</scope>

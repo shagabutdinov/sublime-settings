@@ -1,7 +1,7 @@
 <snippets>
 	<snippet>
 		<content><![CDATA[
-	<?= Html::encode(${1:$indented_selection__or__last_assigned_variable}) ?>
+	<?= Html::encode(${1:$selection__or__last_assigned_variable}) ?>
 	]]></content>
 		<tabTrigger>t</tabTrigger>
 		<scope>text.html(?!.*source)</scope>
@@ -24,7 +24,7 @@
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-	<?= htmlspecialchars(${1:$indented_selection__or__last_assigned_variable}) ?>
+	<?= htmlspecialchars(${1:$selection__or__last_assigned_variable}) ?>
 	]]></content>
 		<tabTrigger>t</tabTrigger>
 		<scope>text.html(?!.*source)</scope>

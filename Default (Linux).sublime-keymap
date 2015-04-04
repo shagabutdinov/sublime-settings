@@ -2,6 +2,24 @@
   // KeymapEnhanced:
   // Should be in User/Default ().sublime-keymap to avoid conflicts with
   // terminal plugin
+  {
+    "keys": ["f5"],
+    "command": "goto_expression",
+    "args": {
+      "expression": "\\.",
+      "options": {
+        "start": "end",
+      },
+    }
+  },
+
+  {
+    "keys": ["f4"],
+    "command": "open_file",
+    "args": {
+      "file": "/home/leo/log.txt"
+    },
+  },
 
   {
     "keys": ["ctrl+shift+t"],
@@ -179,4 +197,22 @@
     "args": {"palette": "imports", "direct": true},
     "context": [{ "key": "selector", "operator": "equal", "operand": "source.go" }]
   },
+
+  // JavaImports
+  {
+    "keys": ["ctrl+u", "ctrl+j"],
+    "command": "java_add_import",
+  },
+
+  {
+    "keys": ["alt+]"],
+    "command": "focus_neighboring_group",
+  },
+
+  {
+    "keys": ["alt+["],
+    "command": "focus_neighboring_group",
+    "args": {"forward": false},
+  },
+
 ]

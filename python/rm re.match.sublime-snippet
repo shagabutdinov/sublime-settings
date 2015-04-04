@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-re.match($1, ${2:$indented_selection})
+re.match($1, ${2:$selection})
 ]]></content>
 	<tabTrigger>rm</tabTrigger>
 	<scope>source.python</scope>

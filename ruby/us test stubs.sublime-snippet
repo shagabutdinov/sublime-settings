@@ -1,5 +1,0 @@
-<snippet>
-	<content>stubs($1)</content>
-	<tabTrigger>us</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

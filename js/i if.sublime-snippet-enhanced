@@ -3,26 +3,32 @@
 	<snippet>
 		<content><![CDATA[
 if(${1:$last_assigned_variable}) {
-	${0:$indented_selection}
+	${0:$selection}
 }
-	]]></content>
+]]></content>
 		<tabTrigger>i</tabTrigger>
 		<scope>source.js</scope>
 		<commands>
-	    [
-	      {
-	        "command": "run_macro_file",
-	        "args": {
-	        	"file": "Packages/User/macro/select_block_for_snippet.sublime-macro"
-	        },
-	        "context": [
-				{"key": "selection_empty", "operator": "equal", "operand": true},
-				{"key": "following_128_chars_end", "operator": "regex_contains", "operand": "^[^\\S\n]*\n[^\\S\n]*\\S(?&lt;!})"},
+			[
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_block_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+						{"key": "following_128_chars_end", "operator": "regex_contains", "operand": "^[^\\S\n]*\n[^\\S\n]*\\S(?&lt;!})"},
+					]
+				},
+				"RUN",
+				{
+					"command": "delete_next_line",
+					"context": [
+						{"key": "following_128_chars_end", "operator": "not_regex_contains", "operand": "^\\)\\s\\{\\s*}"},
+					]
+				}
 			]
-	      },
-	      "RUN",
-	    ]
-	  </commands>
+		</commands>
 		<description>if</description>
 		<context>
 			[
@@ -35,26 +41,11 @@ if(${1:$last_assigned_variable}) {
 	<snippet>
 		<content><![CDATA[
 if(${1:$last_assigned_variable}) {
-	${0:$indented_selection}
+	${0:$selection}
 }
-	]]></content>
+]]></content>
 		<tabTrigger>i</tabTrigger>
 		<scope>source.js</scope>
-		<commands>
-	    [
-	      {
-	        "command": "run_macro_file",
-	        "args": {
-	        	"file": "Packages/User/macro/select_block_for_snippet.sublime-macro"
-	        },
-	        "context": [
-				{"key": "selection_empty", "operator": "equal", "operand": true},
-				{"key": "following_128_chars_end", "operator": "regex_contains", "operand": "^[^\\S\n]*\n[^\\S\n]*\\S"},
-			]
-	      },
-	      "RUN",
-	    ]
-	  </commands>
 		<description>if</description>
 		<context>
 			[
@@ -64,32 +55,32 @@ if(${1:$last_assigned_variable}) {
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-if(${1:$indented_selection}) {
+if(${1:$selection__or__last_assigned_variable}) {
 	$0
 }
 ]]></content>
 		<tabTrigger>i</tabTrigger>
 		<scope>source.js</scope>
 		<commands>
-	    [
-	      {
-	        "command": "run_macro_file",
-	        "args": {
-	        	"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
-	        },
-	        "context": [
-				{"key": "selection_empty", "operator": "equal", "operand": true},
+			[
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
 			]
-	      },
-	      "RUN",
-	    ]
-	  </commands>
-	  <context>
-	  	[
-	  		{"key": "selection_empty", "operator": "equal", "operand": true},
-	  		{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
-	  	]
-	  </context>
+		</commands>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
 		<description>if</description>
 	</snippet>
 

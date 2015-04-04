@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-mb_strlen(${1:$indented_selection__or__last_assigned_variable})
+mb_strlen(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	<tabTrigger>sl</tabTrigger>
 	<scope>source.php</scope>

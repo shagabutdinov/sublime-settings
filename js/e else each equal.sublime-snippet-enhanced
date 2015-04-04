@@ -15,7 +15,7 @@ each(${1:$last_assigned_variable})
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-each(${0:$indented_selection})
+each(${0:$selection})
 ]]></content>
 		<tabTrigger>e</tabTrigger>
 		<scope>source.js</scope>

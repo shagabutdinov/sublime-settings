@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-list(${1:$indented_selection__or__last_assigned_variable})
+list(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	<tabTrigger>l</tabTrigger>
 	<scope>source.php</scope>

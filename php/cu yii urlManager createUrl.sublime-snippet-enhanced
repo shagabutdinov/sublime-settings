@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\Yii::\$app->urlManager->createUrl(${1:$indented_selection})
+\Yii::\$app->urlManager->createUrl(${1:$selection})
 ]]></content>
 	<tabTrigger>cu</tabTrigger>
 	<scope>source.php</scope>

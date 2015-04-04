@@ -9,7 +9,21 @@ null
 		<context>
 			[
 				{"key": "selection_empty", "operator": "equal", "operand": true},
-				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "[^\\w\\s]\\s*n$"},
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "[^\\w\\s\\)]\\s*n$"},
+			]
+		</context>
+	</snippet>
+	<snippet>
+		<content><![CDATA[
+null
+]]></content>
+		<tabTrigger>n</tabTrigger>
+		<scope>source.js</scope>
+		<description>null</description>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "return\\s*n$"},
 			]
 		</context>
 	</snippet>
@@ -23,7 +37,8 @@ null
 		<context>
 			[
 				{"key": "selection_empty", "operator": "equal", "operand": true},
-				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\w\\s*n$"},
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "(\\w|\\))\\s*n$"},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "return\\s*n$"},
 			]
 		</context>
 	</snippet>

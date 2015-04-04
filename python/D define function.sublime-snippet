@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 def $1($2):
-	${0:$indented_selection}
+	${0:$selection}
 ]]></content>
 	<tabTrigger>D</tabTrigger>
 	<scope>source.python</scope>

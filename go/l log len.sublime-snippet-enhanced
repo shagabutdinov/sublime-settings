@@ -1,7 +1,7 @@
 <snippets>
 	<snippet>
 	    <content><![CDATA[
-len(${1:$indented_selection__or__last_assigned_variable})
+len(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	    <tabTrigger>l</tabTrigger>
 	    <scope>source.go</scope>
@@ -15,7 +15,7 @@ len(${1:$indented_selection__or__last_assigned_variable})
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-fmt.Println("LOG($TM_FILENAME:$TM_LINE_NUMBER) - ", ${1:$indented_selection__or__last_assigned_variable})
+fmt.Println("LOG($TM_FILENAME:$TM_LINE_NUMBER) - ", ${1:$selection__or__last_assigned_variable})
 ]]></content>
 		<tabTrigger>l</tabTrigger>
 		<scope>source.go</scope>
@@ -29,7 +29,7 @@ fmt.Println("LOG($TM_FILENAME:$TM_LINE_NUMBER) - ", ${1:$indented_selection__or_
 	</snippet>
 	<snippet>
 	    <content><![CDATA[
-len(${1:$indented_selection__or__last_assigned_variable})
+len(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	    <tabTrigger>l</tabTrigger>
 	    <scope>source.go</scope>
@@ -43,7 +43,7 @@ len(${1:$indented_selection__or__last_assigned_variable})
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-fmt.Println("LOG($TM_FILENAME:$TM_LINE_NUMBER) - ", ${1:$indented_selection__or__last_assigned_variable})
+fmt.Println("LOG($TM_FILENAME:$TM_LINE_NUMBER) - ", ${1:$selection__or__last_assigned_variable})
 ]]></content>
 		<tabTrigger>l</tabTrigger>
 		<scope>source.go</scope>

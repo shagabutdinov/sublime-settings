@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-addClass(${0:$indented_selection})
+addClass(${0:$selection})
 ]]></content>
 	<tabTrigger>ac</tabTrigger>
 	<scope>source.js</scope>

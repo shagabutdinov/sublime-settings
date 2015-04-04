@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\${${1:0}:${2:$indented_selection}}
+\${${1:0}:${2:$selection}}
 ]]></content>
 	<tabTrigger>S</tabTrigger>
 	<scope>text.xml</scope>

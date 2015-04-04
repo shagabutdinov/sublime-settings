@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-preg_match('/$2/', ${1:$indented_selection})
+preg_match('/$2/', ${1:$selection})
 ]]></content>
 	<tabTrigger>pm</tabTrigger>
 	<scope>source.php</scope>

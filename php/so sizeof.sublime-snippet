@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-sizeof(${1:$indented_selection})
+sizeof(${1:$selection})
 ]]></content>
 	<tabTrigger>so</tabTrigger>
 	<scope>source.php</scope>

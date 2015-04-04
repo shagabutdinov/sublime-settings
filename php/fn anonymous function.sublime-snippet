@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 function($1) {
-	${0:$indented_selection}
+	${0:$selection}
 }
 ]]></content>
 	<tabTrigger>fn</tabTrigger>

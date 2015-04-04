@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-test.Assert(${1:$indented_selection__or__last_assigned_variable}, check.Equals, $2)
+test.Assert(${1:$selection__or__last_assigned_variable}, check.Equals, $2)
 ]]></content>
 	<tabTrigger>te</tabTrigger>
 	<scope>source.go</scope>

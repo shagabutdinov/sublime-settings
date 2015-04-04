@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-raise Exception('Unknown $1 "' + ${2:$indented_selection} + '"')
+raise Exception('Unknown $1 "' + ${2:$selection} + '"')
 ]]></content>
 	<tabTrigger>ru</tabTrigger>
 	<scope>source.python</scope>

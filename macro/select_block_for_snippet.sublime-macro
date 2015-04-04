@@ -1,11 +1,11 @@
 [
-  {
-    "command": "goto_expression",
-    "args": {
-      "expression": "\\S",
-      "range": [1, 1024],
-    }
-  },
+  // {
+  //   "command": "goto_expression",
+  //   "args": {
+  //     "expression": "\\S",
+  //     "range": [1, 1024],
+  //   }
+  // },
 
   {
     "command": "goto_indentation",

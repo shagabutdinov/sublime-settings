@@ -2,7 +2,7 @@
 
 	<snippet>
 		<content><![CDATA[
-enumerate(${1:$indented_selection})
+enumerate(${1:$selection})
 	]]></content>
 		<commands>
 			[
@@ -49,7 +49,7 @@ enumerate($1)
 
 	<snippet>
 		<content><![CDATA[
-enumerate(${1:$indented_selection})
+enumerate(${1:$selection})
 	]]></content>
 		<tabTrigger>e</tabTrigger>
 		<scope>source.python</scope>

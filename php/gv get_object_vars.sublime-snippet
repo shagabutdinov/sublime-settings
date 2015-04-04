@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-get_object_vars(${1:$indented_selection})
+get_object_vars(${1:$selection})
 ]]></content>
 	<tabTrigger>gv</tabTrigger>
 	<scope>source.php</scope>

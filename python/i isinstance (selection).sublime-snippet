@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-isinstance(${1:$indented_selection}, $2)
+isinstance(${1:$selection}, $2)
 ]]></content>
 	<tabTrigger>i</tabTrigger>
 	<scope>source.python</scope>

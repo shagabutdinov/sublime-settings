@@ -1,6 +1,6 @@
 <snippet>
     <content><![CDATA[
-_, $1Error := ${2:$indented_selection}
+_, $1Error := ${2:$selection}
 if $1Error != nil {
     $0
 }

@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-<?= HtmlPurifier::process(${1:$indented_selection__or__last_assigned_variable}) ?>
+<?= HtmlPurifier::process(${1:$selection__or__last_assigned_variable}) ?>
 ]]></content>
 	<tabTrigger>tt</tabTrigger>
 	<scope>text.html(?!.*source)</scope>

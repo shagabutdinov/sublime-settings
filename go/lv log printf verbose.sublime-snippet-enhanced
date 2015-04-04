@@ -1,6 +1,6 @@
 <snippet>
   <content><![CDATA[
-log.Printf("${1:v#%}", ${2:$indented_selection__or__last_assigned_variable})
+log.Printf("${1:v#%}", ${2:$selection__or__last_assigned_variable})
 ]]></content>
   <tabTrigger>lv</tabTrigger>
   <scope>source.go</scope>

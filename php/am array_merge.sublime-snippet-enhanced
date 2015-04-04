@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-array_merge(${1:$indented_selection})
+array_merge(${1:$selection})
 ]]></content>
 	<tabTrigger>am</tabTrigger>
 	<scope>source.php</scope>

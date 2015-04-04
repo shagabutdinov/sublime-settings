@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-with(${1:arguments})
-]]></content>
-	<tabTrigger>uw</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

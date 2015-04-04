@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-\Yii::t('app', '{0, date, ${1:medium}}', ${2:$indented_selection})
+\Yii::t('app', '{0, date, ${1:medium}}', ${2:$selection})
 ]]></content>
 	<tabTrigger>td</tabTrigger>
 	<scope>source.php</scope>

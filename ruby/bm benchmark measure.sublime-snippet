@@ -2,7 +2,7 @@
 	<content><![CDATA[
 require 'benchmark'
 puts Benchmark.measure {
-	${0:$indented_selection}
+	${0:$selection}
 }
 ]]></content>
 	<tabTrigger>bm</tabTrigger>

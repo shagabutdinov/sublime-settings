@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 for ${1:varname}Index, ${1:varname}Value := range ${2:$last_assigned_variable} {
-  ${0:$indented_selection}
+  ${0:$selection}
 }
 ]]></content>
 	<tabTrigger>fi</tabTrigger>
