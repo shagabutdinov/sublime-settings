@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-static public \$$1 = ${0:null};
-]]></content>
-	<tabTrigger>sp</tabTrigger>
-	<scope>source.php</scope>
-	<description>static public</description>
-</snippet>

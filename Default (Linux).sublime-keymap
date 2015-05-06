@@ -1,17 +1,37 @@
 [
-  // KeymapEnhanced:
-  // Should be in User/Default ().sublime-keymap to avoid conflicts with
-  // terminal plugin
+  // {
+  //   "keys": ["f6"],
+  //   "command": "open_mysql_console",
+  // },
+
+  // {
+  //   "keys": ["f6"],
+  //   "command": "print_current_line",
+  //   "context": [
+  //     {"key": "in_method_definition", "operator": "equal", "operand": true},
+  //   ],
+  // },
+
   {
-    "keys": ["f5"],
-    "command": "goto_expression",
-    "args": {
-      "expression": "\\.",
-      "options": {
-        "start": "end",
-      },
-    }
+    "keys": ["f6"],
+    "command": "ensure_lines_around",
+    "context": [
+      {"key": "clipboard", "operator": "regex_contains", "operand": "\n", "match_all": true}
+    ]
   },
+
+  // {
+  //   "keys": ["f5"],
+  //   "command": "in_method_definition",
+  // },
+
+  // {
+  //   "keys": ["ctrl+f5"],
+  //   "command": "run_mysql_query",
+  //   "args": {
+  //     "replace": true,
+  //   },
+  // },
 
   {
     "keys": ["f4"],
@@ -21,15 +41,19 @@
     },
   },
 
+  // KeymapEnhanced:
+  // Should be in User/Default ().sublime-keymap to avoid conflicts with
+  // terminal plugin
+
   {
     "keys": ["ctrl+shift+t"],
     "command": "reopen_last_file"
   },
 
-  {
-    "keys": ["ctrl+f8"],
-    "command": "create_save_prompt"
-  },
+  // {
+  //   "keys": ["ctrl+f8"],
+  //   "command": "create_save_prompt"
+  // },
 
   // JointStatement:
   // Next two mappings should be in User/Default ().sublime-keymap to avoid

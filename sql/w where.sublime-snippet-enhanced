@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-WHERE $0
-]]></content>
-	<tabTrigger>w</tabTrigger>
-	<scope>source.sql</scope>
-	<description>where</description>
-</snippet>

@@ -1,6 +1,0 @@
-<snippet>
-		<content>locale.text( '$1' );</content>
-		<tabTrigger>lt</tabTrigger>
-		<scope>source.js</scope>
-		<description>Locale text</description>
-</snippet>

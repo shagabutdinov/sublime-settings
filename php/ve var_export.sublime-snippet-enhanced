@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-var_export(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>ve</tabTrigger>
-	<scope>source.php</scope>
-	<description>var_export</description>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-return false;
-]]></content>
-	<tabTrigger>rf</tabTrigger>
-	<scope>source.php</scope>
-	<description>return false</description>
-</snippet>

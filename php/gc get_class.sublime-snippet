@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-get_class(${1:$selection})
-]]></content>
-	<tabTrigger>gc</tabTrigger>
-	<scope>source.php</scope>
-	<description>get_class</description>
-</snippet>

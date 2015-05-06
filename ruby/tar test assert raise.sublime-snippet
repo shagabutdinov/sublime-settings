@@ -1,9 +1,14 @@
 <snippet>
 	<content><![CDATA[
-assert_raises(${1:expected}) {
+assert_raises(${1:$class}) {
 	$0
 }
 ]]></content>
 	<tabTrigger>tar</tabTrigger>
 	<scope>source.ruby</scope>
+	<eval><![CDATA[
+	{
+		'class': (__import__('Expression').expression.find_text(view, 0, r'class\s*(\S*)(Unit|System)Test') or '') + '::Error'
+	}
+	]]></eval>
 </snippet>

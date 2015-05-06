@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\Yii::\$app->db->createCommand(${1:\$query})->queryAll();
-]]></content>
-	<tabTrigger>dy</tabTrigger>
-	<scope>source.php</scope>
-	<description>Yii query</description>
-</snippet>

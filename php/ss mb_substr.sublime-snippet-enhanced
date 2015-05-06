@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-mb_substr(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>ss</tabTrigger>
-	<scope>source.php</scope>
-	<description>mb_substr</description>
-</snippet>

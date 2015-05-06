@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-isset($1)
-]]></content>
-	<tabTrigger>is</tabTrigger>
-	<scope>source.php</scope>
-	<description></description>
-</snippet>

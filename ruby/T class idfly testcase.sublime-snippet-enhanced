@@ -1,0 +1,22 @@
+<snippet>
+	<content><![CDATA[
+class IdFly::${class} < IdFly::Test::Unit
+
+  def setup()
+    @object = IdFly::${tested_class}.new()
+  end
+
+  $0
+
+end
+]]></content>
+	<tabTrigger>T</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>class idfly testcase</description>
+  <eval><![CDATA[
+{
+	'class': (__import__('User').snippets.get_class_name(view.file_name()) or ''),
+	'tested_class': (__import__('User').snippets.get_class_name(view.file_name()) or '').replace('UnitTest', '').replace('SystemTest', ''),
+}
+]]></eval>
+</snippet>

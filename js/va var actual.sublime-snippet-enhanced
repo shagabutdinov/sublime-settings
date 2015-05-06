@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-var actual = $0
+var actual = ${1:$selection__or__last_assigned_variable}
 ]]></content>
 	<commands><![CDATA[
 	  [

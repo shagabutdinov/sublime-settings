@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-mb_strlen(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>sl</tabTrigger>
-	<scope>source.php</scope>
-	<description>mb_strlen</description>
-</snippet>

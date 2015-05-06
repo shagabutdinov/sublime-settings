@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-array_merge(${1:$selection})
-]]></content>
-	<tabTrigger>am</tabTrigger>
-	<scope>source.php</scope>
-	<description>array_merge</description>
-</snippet>

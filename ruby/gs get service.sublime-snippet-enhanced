@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+get_service($1)
+]]></content>
+  <tabTrigger>gs</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>

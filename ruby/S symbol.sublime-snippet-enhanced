@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+::Symbol
+]]></content>
+	<tabTrigger>S</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>symbol</description>
+</snippet>

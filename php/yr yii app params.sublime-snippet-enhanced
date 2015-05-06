@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\\Yii::\$app->params['$1']
-]]></content>
-	<tabTrigger>yr</tabTrigger>
-	<scope>source.php</scope>
-	<description>yii app params</description>
-</snippet>

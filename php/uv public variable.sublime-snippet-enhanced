@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-public \$$1 = ${2:null};
-]]></content>
-	<tabTrigger>uv</tabTrigger>
-	<scope>source.php</scope>
-	<description>public variable</description>
-</snippet>

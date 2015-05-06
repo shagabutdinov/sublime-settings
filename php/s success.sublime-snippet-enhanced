@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\$success
-]]></content>
-	<tabTrigger>s</tabTrigger>
-	<scope>source.php</scope>
-	<description>$success</description>
-</snippet>

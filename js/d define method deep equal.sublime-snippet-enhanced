@@ -6,6 +6,17 @@ ${1:name}: function(${2:arguments}) {
 	${0}
 },
 ]]></content>
+		<commands><![CDATA[
+			[
+				{
+					"command": "ensure_lines_around",
+					"args": {
+						"ignore_after": [],
+					},
+				},
+				"RUN",
+			]
+		]]></commands>
 		<tabTrigger>d</tabTrigger>
 		<scope>source.js(?!.*string)</scope>
 		<context>
@@ -56,7 +67,7 @@ deep
 					"args": {
 						"expression": "\\.",
 						"options": {
-						  "start": "end",
+							"start": "end",
 						},
 					}
 				},

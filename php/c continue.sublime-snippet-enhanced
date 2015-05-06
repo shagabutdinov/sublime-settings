@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-continue;
-]]></content>
-	<tabTrigger>co</tabTrigger>
-	<scope>source.php</scope>
-	<description>continue</description>
-</snippet>

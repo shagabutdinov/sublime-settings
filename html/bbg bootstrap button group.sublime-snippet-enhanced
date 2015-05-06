@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<div class="btn-group btn-group-sm">
+    ${0:$selection__or__last_assigned_variable}
+</div>
+]]></content>
+	<tabTrigger>bbg</tabTrigger>
+	<scope>text.html</scope>
+	<description>bootstrap button group</description>
+</snippet>

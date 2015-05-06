@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+extend IdFly::Import
+
+def self._import(helper)
+  return {
+    $0
+  }
+end
+]]></content>
+	<tabTrigger>dm</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>def self _import</description>
+</snippet>

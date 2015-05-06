@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-array_values(${1:$selection})
-]]></content>
-	<tabTrigger>av</tabTrigger>
-	<scope>source.php</scope>
-	<description>array_values</description>
-</snippet>

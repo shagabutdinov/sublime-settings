@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\$this->render('$1')
-]]></content>
-	<tabTrigger>tr</tabTrigger>
-	<scope>source.php</scope>
-	<description>this render</description>
-</snippet>

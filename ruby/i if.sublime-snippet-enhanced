@@ -6,64 +6,36 @@ if ${1:$last_assigned_variable}
 	${0:$selection}
 end
 ]]></content>
-		<tabTrigger>i</tabTrigger>
-		<scope>source.ruby</scope>
 		<commands>
 			[
 				{
-					"command": "run_macro_file",
-					"args": {
-						"file": "Packages/User/macro/select_block_for_snippet.sublime-macro"
-					},
-					"context": [
-						{"key": "selection_empty", "operator": "equal", "operand": true},
-						{"key": "following_128_chars_end", "operator": "regex_contains", "operand": "^[^\\S\n]*\n[^\\S\n]*\\S(?&lt;!})"},
-						{"key": "following_128_chars_end", "operator": "not_regex_contains", "operand": "^\\s*end"},
-					]
+					"command": "ensure_line_after",
 				},
 				"RUN",
-				{
-					"command": "delete_next_line",
-					"context": [
-						{"key": "following_128_chars_end", "operator": "not_regex_contains", "operand": "^\\w*\\s*end"},
-					]
-				}
 			]
 		</commands>
-		<description>if</description>
-		<context>
-			[
-				{"key": "selection_empty", "operator": "equal", "operand": true},
-				{"key": "following_text_a", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
-			]
-		</context>
-	</snippet>
-
-	<snippet>
-		<content><![CDATA[
-if ${1:$last_assigned_variable}
-	${0:$selection}
-end
-]]></content>
 		<tabTrigger>i</tabTrigger>
 		<scope>source.ruby</scope>
-		<description>if</description>
 		<context>
 			[
-				{"key": "selection_empty", "operator": "equal", "operand": false},
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "\\.\\s*i$"},
 			]
 		</context>
+		<description>if</description>
 	</snippet>
+
 	<snippet>
 		<content><![CDATA[
 if ${1:$selection}
 	$0
 end
 ]]></content>
-		<tabTrigger>i</tabTrigger>
-		<scope>source.ruby</scope>
 		<commands>
 			[
+				{
+					"command": "ensure_line_after",
+				},
 				{
 					"command": "run_macro_file",
 					"args": {
@@ -76,13 +48,422 @@ end
 				"RUN",
 			]
 		</commands>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "\\.\\s*i$"},
+			]
+		</context>
+		<description>if</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if !${1:$last_assigned_variable}
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>in</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if not</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if !${1:$selection}
+	$0
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>in</tabTrigger>
+		<scope>source.ruby</scope>
 		<context>
 			[
 				{"key": "selection_empty", "operator": "equal", "operand": true},
 				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
 			]
 		</context>
-		<description>if</description>
+		<description>if not</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable}.nil?()
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ii</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if nil</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$selection}.nil?()
+	$0
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ii</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if nil</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if !${1:$last_assigned_variable}.nil?()
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ini</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if not nil</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if !${1:$selection}.nil?()
+	$0
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ini</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if not nil</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable}.empty?()
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ie</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if empty</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$selection}.empty?()
+	$0
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ie</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if empty</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if !${1:$last_assigned_variable}.empty?()
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ine</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if not empty</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if !${1:$selection}.empty?()
+	$0
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ine</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if not empty</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable} == $2
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>iq</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if equal</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$selection} == $2
+	$0
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>iq</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if equal</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable} != $2
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>inq</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if not equal</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$selection} != $2
+	$0
+end
+]]></content>
+		<commands>
+			[
+				{
+					"command": "ensure_line_after",
+				},
+				{
+					"command": "run_macro_file",
+					"args": {
+						"file": "Packages/User/macro/select_line_for_snippet.sublime-macro"
+					},
+					"context": [
+						{"key": "selection_empty", "operator": "equal", "operand": true},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>inq</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "following_text_a", "operator": "regex_contains", "operand": "^[^\\S\n]*\\S"},
+			]
+		</context>
+		<description>if not equal</description>
 	</snippet>
 
 </snippets>

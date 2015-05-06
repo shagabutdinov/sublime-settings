@@ -27,8 +27,19 @@ returns($1)
 	</snippet>
 	<snippet>
 		<content><![CDATA[
-return ${1:$last_assigned_variable}
+return ${1:$selection__or__last_assigned_variable}
 ]]></content>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "run_macro_file_with_context",
+		  		"args": {
+		  			"file": "Packages/User/macro/select_token.sublime-macro",
+		  		}
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
 		<tabTrigger>r</tabTrigger>
 		<scope>source.ruby</scope>
 		<context>

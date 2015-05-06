@@ -4,7 +4,7 @@
 null
 ]]></content>
 		<tabTrigger>n</tabTrigger>
-		<scope>source.js</scope>
+		<scope>source.js(?!.*string)</scope>
 		<description>null</description>
 		<context>
 			[
@@ -18,7 +18,7 @@ null
 null
 ]]></content>
 		<tabTrigger>n</tabTrigger>
-		<scope>source.js</scope>
+		<scope>source.js(?!.*string)</scope>
 		<description>null</description>
 		<context>
 			[
@@ -31,8 +31,16 @@ null
 		<content><![CDATA[
 !== $0
 ]]></content>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "ensure_spaces_around",
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
 		<tabTrigger>n</tabTrigger>
-		<scope>source.js</scope>
+		<scope>source.js(?!.*string)</scope>
 		<description>not equal</description>
 		<context>
 			[

@@ -4,5 +4,10 @@ puts(${1:$selection__or__last_assigned_variable})
 ]]></content>
 	<tabTrigger>p</tabTrigger>
 	<scope>source.ruby</scope>
+	<context>
+	    [
+	        {"key": "in_class_definition", "operator": "not_equal", "operand": true}
+	    ]
+	</context>
 	<description>puts</description>
 </snippet>

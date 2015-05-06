@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-return ${1:$last_assigned_variable};
-]]></content>
-	<tabTrigger>r</tabTrigger>
-	<scope>source.php</scope>
-	<description>return</description>
-</snippet>

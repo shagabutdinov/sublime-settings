@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-to_s()
-]]></content>
-	<tabTrigger>S</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>to_s</description>
-</snippet>

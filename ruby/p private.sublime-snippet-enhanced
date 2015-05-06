@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+private
+]]></content>
+	<tabTrigger>p</tabTrigger>
+	<scope>source.ruby</scope>
+	<context>
+	    [
+	        {"key": "in_class_definition", "operator": "equal", "operand": true}
+	    ]
+	</context>
+	<description>private</description>
+</snippet>

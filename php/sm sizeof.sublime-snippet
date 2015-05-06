@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-sizeof(${1:$selection}) - 1
-]]></content>
-		<tabTrigger>sm</tabTrigger>
-		<scope>source.php</scope>
-		<description>sizeof - 1</description>
-</snippet>

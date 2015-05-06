@@ -1,0 +1,380 @@
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
+require '$1';
+]]></content>
+		<tabTrigger>rq</tabTrigger>
+		<scope>source.php</scope>
+		<description>require</description>
+	</snippet>
+
+	<!-- control structures -->
+
+	<snippet>
+		<content><![CDATA[
+if(${1:$last_assigned_variable}) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.php</scope>
+		<context>
+			[
+				{"key": "in_class_definition", "operator": "not_equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "->\\s*i$"},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*i$"},
+			]
+		</context>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if(!${1:\$case}) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>in</tabTrigger>
+		<scope>source.php</scope>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if(empty($1)) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>ie</tabTrigger>
+		<scope>source.php</scope>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if(!empty($1)) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>ine</tabTrigger>
+		<scope>source.php</scope>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if(isset($1)) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>ii</tabTrigger>
+		<scope>source.php</scope>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if(!isset($1)) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>ini</tabTrigger>
+		<scope>source.php</scope>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+elseif($1) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>ei</tabTrigger>
+		<scope>source.php</scope>
+		<description>elseif</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+else {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>e</tabTrigger>
+		<scope>source.php</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "\\}\\s*e$"},
+			]
+		</context>
+		<description>else</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+foreach(${1:$last_assigned_variable} as ${2:\$key => }${3:\$value}) {
+	$0
+}
+]]></content>
+		<tabTrigger>f</tabTrigger>
+		<scope>source.php</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*f$"},
+				{"key": "in_class_definition", "operator": "equal", "operand": false},
+			]
+		</context>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+while($1) {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>w</tabTrigger>
+		<scope>source.php</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "->\\s*w$"},
+			]
+		</context>
+		<description>while</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+break;
+]]></content>
+		<tabTrigger>b</tabTrigger>
+		<scope>source.php</scope>
+		<description>break</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+continue;
+]]></content>
+		<tabTrigger>c</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*c$"},
+				{"key": "in_class_definition", "operator": "equal", "operand": false},
+			]
+		]]></context>
+		<description>continue</description>
+	</snippet>
+
+	<!-- comparisons -->
+
+	<snippet>
+		<content><![CDATA[
+===
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+				{"command": "ensure_space_after", "args": {"ignored": []}},
+				{"command": "move", "args": {"by": "characters", "forward": true}},
+			]
+		</commands>
+		<tabTrigger>e</tabTrigger>
+		<scope>source.php</scope>
+		<context>
+			[
+				{"key": "selection_empty", "operator": "equal", "operand": true},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\)\\]\\w]\\s*e$"},
+			]
+		</context>
+		<description>equal</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+=== null
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+				{"command": "ensure_space_after", "args": {"ignored": []}},
+				{"command": "move", "args": {"by": "characters", "forward": true}},
+			]
+		</commands>
+		<tabTrigger>en</tabTrigger>
+		<scope>source.php</scope>
+		<description>is null</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+!== $0
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+				{"command": "ensure_space_after", "args": {"ignored": []}},
+				{"command": "move", "args": {"by": "characters", "forward": true}},
+			]
+		</commands>
+		<tabTrigger>ne</tabTrigger>
+		<scope>source.php</scope>
+		<description>not equal</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+!== null
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+				{"command": "ensure_space_after", "args": {"ignored": []}},
+				{"command": "move", "args": {"by": "characters", "forward": true}},
+			]
+		</commands>
+		<tabTrigger>nn</tabTrigger>
+		<scope>source.php</scope>
+		<description>is not null</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+instanceof $0
+]]></content>
+		<tabTrigger>io</tabTrigger>
+		<scope>source.php</scope>
+		<description>instanceof</description>
+	</snippet>
+
+	<!-- returns -->
+
+	<snippet>
+		<content><![CDATA[
+return ${1:$selection__or__last_assigned_variable}
+]]></content>
+		<commands><![CDATA[
+			[
+				{
+					"command": "run_macro_file_with_context",
+					"args": {
+						"file": "Packages/User/macro/add_semicolon_and_select_token.sublime-macro",
+					}
+				},
+				"RUN",
+			]
+		]]></commands>
+		<tabTrigger>r</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*r$"},
+			]
+		]]></context>
+		<description>return</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+return true;
+]]></content>
+		<tabTrigger>rt</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*rt$"},
+			]
+		]]></context>
+		<description>return true</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+return false;
+]]></content>
+		<tabTrigger>rf</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*rf$"},
+			]
+		]]></context>
+		<description>return false</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+return null;
+]]></content>
+		<tabTrigger>rn</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*rn$"},
+			]
+		]]></context>
+		<description>return null</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+return \$result;
+]]></content>
+		<tabTrigger>rr</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*rr$"},
+			]
+		]]></context>
+		<description>return $result</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+return \$success;
+]]></content>
+		<tabTrigger>rs</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*rs$"},
+			]
+		]]></context>
+		<description>return success</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+throw new \Exception('${1:$selection}')
+]]></content>
+		<tabTrigger>th</tabTrigger>
+		<scope>source.php</scope>
+		<description>throw new Exception()</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+(int)
+]]></content>
+		<tabTrigger>it</tabTrigger>
+		<scope>source.php</scope>
+		<context>
+			[
+				{"key": "in_class_definition", "operator": "not_equal", "operand": true},
+				{"key": "preceding_128_chars_begin", "operator": "not_regex_contains", "operand": "->\\s*i$"},
+				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>int</description>
+	</snippet>
+
+</snippets>

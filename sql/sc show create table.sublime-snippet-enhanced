@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-SHOW CREATE TABLE `$1`\G
-]]></content>
-	<tabTrigger>sc</tabTrigger>
-	<scope>source.sql</scope>
-	<description>show create table</description>
-</snippet>

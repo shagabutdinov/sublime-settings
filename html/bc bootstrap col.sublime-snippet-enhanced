@@ -1,7 +1,9 @@
 <snippet>
-	<content><![CDATA[<div class="col-sm-$1">
-	$0
-</div>]]></content>
+	<content><![CDATA[
+<div class="col-sm-$1">
+	${0:$selection}
+</div>
+]]></content>
 	<tabTrigger>bc</tabTrigger>
 	<scope>text.html(?!.*source)</scope>
 </snippet>

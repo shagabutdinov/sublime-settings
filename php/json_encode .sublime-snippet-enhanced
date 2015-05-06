@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-json_encode(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>je</tabTrigger>
-	<scope>source.php</scope>
-	<description>json_encode</description>
-</snippet>

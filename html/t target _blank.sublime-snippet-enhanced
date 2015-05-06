@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+target="_blank"
+]]></content>
+	<tabTrigger>t</tabTrigger>
+	<scope>text.html(?!.*source)</scope>
+	<context><![CDATA[
+		[
+			{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "<a\\s*t$"},
+		]
+	]]></context>
+	<description>target _blank</description>
+</snippet>

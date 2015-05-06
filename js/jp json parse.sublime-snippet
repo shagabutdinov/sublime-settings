@@ -1,8 +1,19 @@
 <snippet>
-		<content><![CDATA[
-JSON.parse($1)
+	<content><![CDATA[
+JSON.parse(${1:$selection__or__last_assigned_variable})
 ]]></content>
-		<tabTrigger>jp</tabTrigger>
-		<scope>source.js</scope>
-		<description>json parse</description>
+	<commands><![CDATA[
+	  [
+	  	{
+	  		"command": "run_macro_file_with_context",
+	  		"args": {
+	  			"file": "Packages/User/macro/add_semicolon_and_select_token.sublime-macro",
+	  		}
+	  	},
+	  	"RUN",
+	  ]
+	]]></commands>
+	<tabTrigger>jp</tabTrigger>
+	<scope>source.js</scope>
+	<description>json parse</description>
 </snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+get_kernel()
+]]></content>
+	<tabTrigger>gk</tabTrigger>
+	<scope>source.ruby</scope>
+	<description>helper get_kernel</description>
+</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-stubs(:${1:method})
-]]></content>
-	<tabTrigger>ms</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

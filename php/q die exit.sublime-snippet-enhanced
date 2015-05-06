@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-die('EXIT: $file');
-]]></content>
-	<tabTrigger>q</tabTrigger>
-	<scope>source.php</scope>
-	<description>die exit</description>
-	<eval>{'file': view.file_name().split('/')[-1]}</eval>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<?= \\Yii::t('app', 'Interchange offers the best way to exchange digital currencies.') ?>
-]]></content>
-	<tabTrigger>T</tabTrigger>
-	<scope>source.php</scope>
-	<description>yii translate</description>
-</snippet>

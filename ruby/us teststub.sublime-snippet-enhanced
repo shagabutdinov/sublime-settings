@@ -1,8 +1,31 @@
-<snippet>
-	<content><![CDATA[
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
 @$1 = stub()
 ]]></content>
-	<tabTrigger>us</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>test stub</description>
-</snippet>
+		<tabTrigger>us</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>test stub</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+stub()
+]]></content>
+		<tabTrigger>us</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "^\\s*$"},
+			]
+		</context>
+		<description>test stub</description>
+	</snippet>
+
+</snippets>

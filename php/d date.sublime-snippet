@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-date($1, ${2:$selection})
-]]></content>
-	<tabTrigger>d</tabTrigger>
-	<scope>source.php(?!.*string)</scope>
-	<description>date</description>
-</snippet>

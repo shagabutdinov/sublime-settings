@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-Y-m-d
-]]></content>
-		<tabTrigger>D</tabTrigger>
-		<scope>source.php.*string</scope>
-		<description>date</description>
-</snippet>

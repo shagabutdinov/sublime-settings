@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-if ${1:$last_assigned_variable} != $2
-	${0:$selection}
-end
-]]></content>
-	<tabTrigger>inq</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

@@ -2,7 +2,7 @@
 	<snippet>
 
 		<content><![CDATA[
-_.clone(${1:$selection__or__last_assigned_variable});
+_.clone(${1:$selection__or__last_assigned_variable})
 ]]></content>
 		<commands><![CDATA[
 		  [

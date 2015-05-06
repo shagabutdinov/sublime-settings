@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\$_SERVER['REQUEST_URI']
-]]></content>
-	<tabTrigger>S</tabTrigger>
-	<scope>source.php</scope>
-	<description>_SERVER REQUEST_URI</description>
-</snippet>

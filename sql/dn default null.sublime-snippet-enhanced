@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-DEFAULT NULL
-]]></content>
-	<tabTrigger>dn</tabTrigger>
-	<scope>source.sql</scope>
-	<description>default null</description>
-</snippet>
