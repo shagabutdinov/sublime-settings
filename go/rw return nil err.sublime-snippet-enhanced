@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-return nil, err
-]]></content>
-	<tabTrigger>rw</tabTrigger>
-	<scope>source.go</scope>
-	<description>return nil err</description>
-</snippet>

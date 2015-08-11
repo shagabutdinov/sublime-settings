@@ -1,0 +1,21 @@
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
+strconv
+]]></content>
+		<tabTrigger>s</tabTrigger>
+		<scope>source.go</scope>
+		<description>strconv itoa</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+strconv.Itoa(${1:$last_assigned_variable})
+]]></content>
+		<trigger>strconv.i</trigger>
+		<scope>source.go</scope>
+		<description>strconv itoa</description>
+	</snippet>
+
+</snippets>

@@ -1,7 +1,7 @@
 import sublime
 import re
 
-from RunMysqlQuery import mysql
+from MysqlConsole import mysql
 
 def get_class_name(file, options = {'delimeter': '::'}):
   if file == None:
@@ -49,3 +49,17 @@ def get_mysql_set(view):
     result.append('`' + field.group(1) + '` = ${' + str(index + 1) + ':NULL}')
 
   return ",\n".join(result)
+
+def convert_to_variable(string, options = {}):
+  match = re.search(r'(\w+)(::|\s*$|\()', string)
+  if match != None:
+    string = match.group(1)
+
+  string = re.sub(r'\W', '', string)
+  string = re.sub(r'^_', '', string)
+
+  if options.get('singular'):
+    string = re.sub(r'ies([A-Z]|_|$)', 'y\\1', string)
+    string = re.sub(r'(es|s)([A-Z]|_|$)', '\\2', string)
+
+  return string

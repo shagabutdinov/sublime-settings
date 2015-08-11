@@ -8,6 +8,6 @@
 	<eval><![CDATA[{
 	    'element': (__import__('Expression').expression.find_text(view, view.sel()[0].begin(), r'field\((.*?),', {'nesting': True, 'backward': True}) or
 	        __import__('Expression').expression.find_text(view, view.sel()[0].begin(), r'field\((.*?),', {'nesting': True}) or
-	        '').replace('$', '\$')
+	        '')
 	}]]></eval>
 </snippet>

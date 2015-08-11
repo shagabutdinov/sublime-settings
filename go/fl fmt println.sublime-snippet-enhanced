@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-fmt.Println(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>fl</tabTrigger>
-	<scope>source.go</scope>
-	<description>fmt println</description>
-</snippet>

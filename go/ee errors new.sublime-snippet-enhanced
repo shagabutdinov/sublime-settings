@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-errors.New(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>ee</tabTrigger>
-	<scope>source.go</scope>
-	<description>errors new</description>
-</snippet>

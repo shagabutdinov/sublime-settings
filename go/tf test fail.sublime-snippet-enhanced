@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-test.Fail()
-]]></content>
-	<tabTrigger>tf</tabTrigger>
-	<scope>source.go</scope>
-	<description>test fail</description>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-return true
-]]></content>
-	<tabTrigger>rt</tabTrigger>
-	<scope>source.go</scope>
-	<description>return true</description>
-</snippet>

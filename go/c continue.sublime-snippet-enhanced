@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-continue
-]]></content>
-	<tabTrigger>c</tabTrigger>
-	<scope>source.go</scope>
-	<description>continue</description>
-</snippet>

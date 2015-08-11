@@ -81,6 +81,27 @@ var_dump(${1:$selection__or__last_assigned_variable})
 
 	<snippet>
 		<content><![CDATA[
+die('EXIT: $file');
+]]></content>
+		<commands><![CDATA[
+			[
+				{
+					"command": "run_macro_file_with_context",
+					"args": {
+						"file": "Packages/User/macro/select_token.sublime-macro",
+					}
+				},
+				"RUN",
+			]
+		]]></commands>
+		<tabTrigger>q</tabTrigger>
+		<scope>source.php</scope>
+		<eval>{'file': (view.file_name() or '').split('/')[-1]}</eval>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
 var_export(${1:$selection__or__last_assigned_variable})
 ]]></content>
 		<tabTrigger>ve</tabTrigger>
@@ -95,13 +116,48 @@ print_r(${1:$selection__or__last_assigned_variable});
 		<tabTrigger>p</tabTrigger>
 		<scope>source.php</scope>
 		<context>
-				[
-						{"key": "in_class_definition", "operator": "not_equal", "operand": true}
-				]
+			[
+				{"key": "in_class_definition", "operator": "not_equal", "operand": true},
+			]
 		</context>
 		<description>print_r</description>
 	</snippet>
 
+	<snippet>
+		<content><![CDATA[
+parent::$method(
+]]></content>
+		<tabTrigger>print_r(</tabTrigger>
+		<scope>source.php</scope>
+		<eval><![CDATA[
+			{
+				'method': __import__('Method').method.extract_method(view)['name']
+			}
+		]]></eval>
+		<description>parent::method</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+parent::$method($1)
+]]></content>
+		<tabTrigger>p</tabTrigger>
+		<scope>source.php</scope>
+		<context>
+			[
+				{"key": "in_class_definition", "operator": "not_equal", "operand": true},
+				{"key": "line", "operator": "not_regex_contains", "operand": "^\\s*p\\s*$"},
+			]
+		</context>
+		<eval><![CDATA[
+			{
+				'method': __import__('Method').method.extract_method(view)['name']
+			}
+		]]></eval>
+		<description>parent::method</description>
+		<order>1</order>
+	</snippet>
+<!--
 	<snippet>
 		<content><![CDATA[
 die('EXIT: $file');
@@ -110,19 +166,30 @@ die('EXIT: $file');
 		<scope>source.php</scope>
 		<description>die exit</description>
 		<eval>{'file': (view.file_name() or '').split('/')[-1]}</eval>
-	</snippet>
+	</snippet> -->
 
 	<!-- date and time -->
 
 	<snippet>
 		<content><![CDATA[
-strtotime(${1:$selection})
+strtotime(${1:$selection__or__last_assigned_variable})
 ]]></content>
 		<tabTrigger>st</tabTrigger>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "run_macro_file_with_context",
+		  		"args": {
+		  			"file": "Packages/User/macro/add_semicolon_and_select_token.sublime-macro",
+		  		}
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
 		<scope>source.php</scope>
 		<context><![CDATA[
 			[
-				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "^\\s*$"},
+				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "^\\s*st$"},
 			]
 		]]></context>
 		<description>strtotime</description>
@@ -165,6 +232,15 @@ date('Y-m-d H:i:s'
 
 	<snippet>
 		<content><![CDATA[
+date('d.m.Y H:i:s'
+]]></content>
+		<tabTrigger>date('Y-m-d H:i:s'</tabTrigger>
+		<scope>source.php</scope>
+		<description>date</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
 Y-m-d
 ]]></content>
 			<tabTrigger>Y</tabTrigger>
@@ -194,7 +270,7 @@ preg_match('/$2/', ${1:$selection})
 
 	<snippet>
 		<content><![CDATA[
-preg_replace('/$2/', $3, ${1:$selection})
+preg_replace('/$2/', '$3', ${1:$selection__or__last_assigned_variable})
 ]]></content>
 		<tabTrigger>pr</tabTrigger>
 		<commands><![CDATA[
@@ -358,7 +434,7 @@ json_encode(${1:$selection__or__last_assigned_variable}, JSON_UNESCAPED_UNICODE)
 
 	<snippet>
 		<content><![CDATA[
-json_decode(${1:$selection__or__last_assigned_variable})
+json_decode(${1:$selection__or__last_assigned_variable}, true)
 ]]></content>
 		<commands><![CDATA[
 			[
@@ -396,6 +472,15 @@ file_put_contents(${1:$selection__or__last_assigned_variable})
 		<description>file_put_contents</description>
 	</snippet>
 
+	<snippet>
+		<content><![CDATA[
+file_exists(${1:$selection})
+]]></content>
+		<tabTrigger>fe</tabTrigger>
+		<scope>source.php</scope>
+		<description>file_get_contents</description>
+	</snippet>
+
 	<!-- arrays -->
 
 	<snippet>
@@ -420,6 +505,17 @@ in_array(${1:$selection}, $2)
 		<content><![CDATA[
 list(${1:$selection__or__last_assigned_variable})
 ]]></content>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "run_macro_file_with_context",
+		  		"args": {
+		  			"file": "Packages/User/macro/add_semicolon_and_select_token.sublime-macro",
+		  		}
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
 		<tabTrigger>l</tabTrigger>
 		<scope>source.php</scope>
 		<description>list</description>
@@ -458,12 +554,12 @@ array_values(${1:$selection})
 	</snippet>
 
 	<snippet>
-			<content><![CDATA[
+		<content><![CDATA[
 sizeof(${1:$selection}) - 1
 ]]></content>
-			<tabTrigger>sm</tabTrigger>
-			<scope>source.php</scope>
-			<description>sizeof - 1</description>
+		<tabTrigger>sm</tabTrigger>
+		<scope>source.php</scope>
+		<description>sizeof - 1</description>
 	</snippet>
 
 	<snippet>
@@ -473,6 +569,100 @@ sizeof(${1:$selection})
 		<tabTrigger>so</tabTrigger>
 		<scope>source.php</scope>
 		<description>sizeof</description>
+	</snippet>
+
+	<!-- user -->
+
+	<snippet>
+		<content><![CDATA[
+requireCurrent()
+]]></content>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "run_macro_file_with_context",
+		  		"args": {"file": "Packages/User/macro/add_semicolon.sublime-macro"}
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
+		<tabTrigger>rc</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "(::|->)\\s*\\w+$"},
+			]
+		]]></context>
+		<description>requireCurrent</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+requireCurrentId()
+]]></content>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "run_macro_file_with_context",
+		  		"args": {"file": "Packages/User/macro/add_semicolon.sublime-macro"}
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
+		<tabTrigger>requireCurrent()</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "(::|->)\\s*\\w+$"},
+			]
+		]]></context>
+		<description>requireCurrentId</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+getCurrent()
+]]></content>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "run_macro_file_with_context",
+		  		"args": {"file": "Packages/User/macro/add_semicolon.sublime-macro"}
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
+		<tabTrigger>gc</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "(::|->)\\s*\\w+$"},
+			]
+		]]></context>
+		<description>getCurrent</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+getCurrentId()
+]]></content>
+		<commands><![CDATA[
+		  [
+		  	{
+		  		"command": "run_macro_file_with_context",
+		  		"args": {"file": "Packages/User/macro/add_semicolon.sublime-macro"}
+		  	},
+		  	"RUN",
+		  ]
+		]]></commands>
+		<tabTrigger>getCurrent()</tabTrigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_128_chars_begin", "operator": "regex_contains", "operand": "(::|->)\\s*\\w+$"},
+			]
+		]]></context>
+		<description>getCurrentId</description>
 	</snippet>
 
 </snippets>

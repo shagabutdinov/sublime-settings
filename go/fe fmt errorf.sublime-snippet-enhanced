@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-fmt.Errorf(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>fe</tabTrigger>
-	<scope>source.go</scope>
-	<description>fmt errorf</description>
-</snippet>

@@ -33,7 +33,7 @@
 	"bold_folder_labels": false,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/SublimeLinter/Dawn (SL).tmTheme",
+	"color_scheme": "Packages/User/Tubnil Bright (SL).tmTheme",
 	"create_window_at_startup": false,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
@@ -83,20 +83,19 @@
 	"font_face": "Consolas",
 	"font_options":
 	[
-		"antialiasfull"
 	],
-	"font_size": 12,
+	"font_size": 10,
 	"gutter": true,
 	"highlight_line": true,
 	"highlight_modified_tabs": true,
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"Theme - Centurion Blue",
-		"Tabright",
 		"PHP Modern",
 		"Theme - Cyanide",
-		"Vintage"
+		"Theme - Centurion Blue",
+		"Vintage",
+		"Tabright"
 	],
 	"indent_guide_options":
 	[

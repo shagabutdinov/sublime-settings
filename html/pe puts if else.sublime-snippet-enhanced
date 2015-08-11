@@ -2,7 +2,7 @@
     <content><![CDATA[
 <? if($1) { echo $2; } else { echo $3; } ?>
 ]]></content>
-    <tabTrigger>pi</tabTrigger>
+    <tabTrigger>pie</tabTrigger>
     <scope>text.html(?!.*source)</scope>
     <description>puts if</description>
 </snippet>

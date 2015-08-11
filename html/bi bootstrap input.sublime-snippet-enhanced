@@ -1,6 +1,7 @@
 <snippet>
-	<content><![CDATA[<input type="${1:text}" class="form-control" id="${2:key}" name="${2:key}" placeholder="" value="$3">
-<div class="Form-message" Form-message="${2:key}"></div>]]></content>
+	<content><![CDATA[
+<input type="${1:text}" class="form-control" id="${2:key}" name="${2:key}" placeholder="" value="$3">
+]]></content>
 	<tabTrigger>bi</tabTrigger>
 	<scope>text.html(?!.*source)</scope>
 </snippet>

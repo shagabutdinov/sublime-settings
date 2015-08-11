@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-strconv.Itoa(${1:$last_assigned_variable})
-]]></content>
-	<tabTrigger>si</tabTrigger>
-	<scope>source.go</scope>
-	<description>strconv itoa</description>
-</snippet>

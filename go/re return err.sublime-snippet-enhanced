@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-return err
-]]></content>
-	<tabTrigger>re</tabTrigger>
-	<scope>source.go</scope>
-	<description>return err</description>
-</snippet>

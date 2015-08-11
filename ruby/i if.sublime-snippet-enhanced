@@ -8,9 +8,7 @@ end
 ]]></content>
 		<commands>
 			[
-				{
-					"command": "ensure_line_after",
-				},
+				{"command": "ensure_line_after"},
 				"RUN",
 			]
 		</commands>

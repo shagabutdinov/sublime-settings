@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-debug.PrintStack()
-]]></content>
-	<tabTrigger>dp</tabTrigger>
-	<scope>source.go</scope>
-	<description>debug printstack</description>
-</snippet>

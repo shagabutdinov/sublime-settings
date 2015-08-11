@@ -2,7 +2,7 @@
 	<content><![CDATA[
 <?= \$form->
     field(${1:$element}, '${2:property}')->
-    input('text') ?>
+    input('${3:text}') ?>
 ]]></content>
 	<tabTrigger>fi</tabTrigger>
 	<scope>text.html</scope>

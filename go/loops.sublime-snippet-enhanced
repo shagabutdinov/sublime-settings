@@ -1,0 +1,54 @@
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
+for ${1:index} := ${2:0}; ${1:index} < ${3:$last_assigned_variable}; ${1:index} += 1 {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>f</tabTrigger>
+		<scope>source.go</scope>
+		<description>for index</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+for ${1:varname}Index, ${1:varname}Value := range ${2:$last_assigned_variable} {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>fi</tabTrigger>
+		<scope>source.go</scope>
+		<description>for with index</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+for $1, $2 := range ${3:$last_assigned_variable} {
+	${0:$selection}
+}
+]]></content>
+		<tabTrigger>fr</tabTrigger>
+		<scope>source.go</scope>
+		<description>for a1, a2 := range</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+break
+]]></content>
+		<tabTrigger>b</tabTrigger>
+		<scope>source.go(?!=.*string)</scope>
+		<description>break</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+continue
+]]></content>
+		<tabTrigger>c</tabTrigger>
+		<scope>source.go</scope>
+		<description>continue</description>
+	</snippet>
+
+</snippets>

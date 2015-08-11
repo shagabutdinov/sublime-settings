@@ -3,6 +3,6 @@
 <?= $1 ?>
 ]]></content>
     <tabTrigger>p</tabTrigger>
-    <scope>text.html(?!.*source).*string.*(?!.*source)</scope>
+    <scope>text.html(?!.*source)</scope>
     <description>php puts</description>
 </snippet>

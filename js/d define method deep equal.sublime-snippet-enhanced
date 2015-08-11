@@ -2,7 +2,7 @@
 
 	<snippet>
 		<content><![CDATA[
-${1:name}: function(${2:arguments}) {
+${1:name}: function($2) {
 	${0}
 },
 ]]></content>
