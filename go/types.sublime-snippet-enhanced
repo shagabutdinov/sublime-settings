@@ -91,7 +91,7 @@ func ($this) ${2:name}(${3:args})$4 {
 		<trigger>d</trigger>
 		<eval><![CDATA[
 			{
-				'this': __import__('Utilities').go.find_this_arg(view, False)
+				'this': __import__('Utilities').go.find_this_arg(view, True)
 			}
 		]]></eval>
 		<scope>source.go</scope>
@@ -106,16 +106,21 @@ func ($this) ${2:name}(${3:args})$4 {
 
 	<snippet>
 		<content><![CDATA[
-string
+func Test$1(test *testing.T) {
+	${0:$selection}
+}
 ]]></content>
-		<trigger>s</trigger>
+		<trigger>d</trigger>
 		<scope>source.go</scope>
 		<context><![CDATA[
 			[
-				{"key": "in_go_type_definition", "operator": "equal", "operand": true},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^d$"},
+				{"key": "nesting", "operator": "equal", "operand": null},
+				{"key": "filename", "operator": "regex_contains", "operand": "_test\\.go$"},
 			]
 		]]></context>
-		<description>string</description>
+		<description>func this</description>
+		<order>5</order>
 	</snippet>
 
 	<snippet>
@@ -126,21 +131,14 @@ string
 		<scope>source.go</scope>
 		<context><![CDATA[
 			[
-				{"key": "in_method_definition", "operator": "equal", "operand": true},
-			]
-		]]></context>
-		<description>string</description>
-	</snippet>
-
-	<snippet>
-		<content><![CDATA[
-string
-]]></content>
-		<trigger>s</trigger>
-		<scope>source.go</scope>
-		<context><![CDATA[
-			[
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\.\\(s$"},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "(\\w\\s*s)$"},
+				[
+					{"key": "in_go_type_definition", "operator": "equal", "operand": true},
+					"or",
+					{"key": "in_method_definition", "operator": "equal", "operand": true},
+				],
+				"or",
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "([\\[\\]]|\\.\\()s$"},
 			]
 		]]></context>
 		<description>string</description>

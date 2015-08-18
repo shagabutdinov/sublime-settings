@@ -2,7 +2,7 @@
 
 	<snippet>
 		<content><![CDATA[
-for ${1:index} := ${2:0}; ${1:index} < ${3:$last_assigned_variable}; ${1:index} += 1 {
+for $1 {
 	${0:$selection}
 }
 ]]></content>
@@ -13,24 +13,52 @@ for ${1:index} := ${2:0}; ${1:index} < ${3:$last_assigned_variable}; ${1:index} 
 
 	<snippet>
 		<content><![CDATA[
-for ${1:varname}Index, ${1:varname}Value := range ${2:$last_assigned_variable} {
-	${0:$selection}
-}
+range $0
 ]]></content>
-		<tabTrigger>fi</tabTrigger>
+		<trigger>r</trigger>
 		<scope>source.go</scope>
-		<description>for with index</description>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*.*?for.*?:= r$"},
+			]
+		]]></context>
+		<description>for range</description>
 	</snippet>
 
 	<snippet>
 		<content><![CDATA[
-for $1, $2 := range ${3:$last_assigned_variable} {
-	${0:$selection}
-}
+:= range $0
 ]]></content>
-		<tabTrigger>fr</tabTrigger>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+			]
+		</commands>
+		<trigger>;</trigger>
 		<scope>source.go</scope>
-		<description>for a1, a2 := range</description>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "^\\s*.*?for.*?,.*?;$"},
+			]
+		]]></context>
+		<description>for range</description>
+		<order>5</order>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+${1:index} := ${2:0}; ${1:index} < $3; ${1:index} += ${4:1}
+]]></content>
+		<trigger>i</trigger>
+		<scope>source.go</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "for\\s*i$"},
+			]
+		]]></context>
+		<order>10</order>
+		<description>for index</description>
 	</snippet>
 
 	<snippet>

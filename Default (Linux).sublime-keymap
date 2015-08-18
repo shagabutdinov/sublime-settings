@@ -5,6 +5,10 @@
     "args": {
       "file": "/home/leo/.config/balmora/conf.d/dotfiles.variables.conf"
     },
+    "context": [
+      {"key": "setting.sublime_enhanced_keybindings", "operator": "equal", "operand": true},
+      {"key": "overlay_visible", "operator": "equal", "operand": false}
+    ],
   },
 
   // {

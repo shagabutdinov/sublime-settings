@@ -118,10 +118,10 @@ false
 		<scope>source.go(?!=.*string)</scope>
 		<context><![CDATA[
 			[
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\w\\[\\{\\(,]\\s*f$"},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\w\\[\\{\\(,=]\\s*f$"},
 			]
 		]]></context>
-		<order>1</order>
+		<order>5</order>
 		<description>false</description>
 	</snippet>
 
@@ -202,6 +202,60 @@ return nil, err
 ]]></content>
 		<tabTrigger>rw</tabTrigger>
 		<scope>source.go</scope>
+		<description>return nil err</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+len(${1:$selection__or__last_assigned_variable})
+]]></content>
+		<commands>
+			[
+				{
+					"command": "select_current_token_tail",
+					"context": [
+						{"key": "following_text_end", "operator": "regex_contains", "operand": "^[\\w'\"(\\[]"},
+					]
+				},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>l</tabTrigger>
+		<scope>source.go</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\S\\s*l$"},
+			]
+		]]></context>
+		<order>5</order>
+		<description>return nil err</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+${trigger1} := append(${1:${trigger1}}, $0)
+]]></content>
+		<tabTriggerRegexp>(\w+)\s*:=\s*a</tabTriggerRegexp>
+		<scope>source.go</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "=\\s*a$"},
+			]
+		]]></context>
+		<description>return nil err</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+${trigger1} = append(${1:${trigger1}}, $0)
+]]></content>
+		<tabTriggerRegexp>(\w+)\s*=\s*a</tabTriggerRegexp>
+		<scope>source.go</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "=\\s*a$"},
+			]
+		]]></context>
 		<description>return nil err</description>
 	</snippet>
 

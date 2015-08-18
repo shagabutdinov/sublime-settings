@@ -15,7 +15,7 @@ func Test${1:name}(test *testing.T) {
 		<content><![CDATA[
 test.Assert(${1:$selection__or__last_assigned_variable}, check.Equals, $2)
 ]]></content>
-		<tabTrigger>te</tabTrigger>
+		<tabTrigger>ta</tabTrigger>
 		<scope>source.go</scope>
 		<description>test assert equals</description>
 	</snippet>
@@ -25,6 +25,15 @@ test.Assert(${1:$selection__or__last_assigned_variable}, check.Equals, $2)
 test.Fail()
 ]]></content>
 		<tabTrigger>tf</tabTrigger>
+		<scope>source.go</scope>
+		<description>test fail</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+test.Error(${1:err})
+]]></content>
+		<tabTrigger>te</tabTrigger>
 		<scope>source.go</scope>
 		<description>test fail</description>
 	</snippet>
