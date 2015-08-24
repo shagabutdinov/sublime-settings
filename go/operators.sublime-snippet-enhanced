@@ -78,7 +78,7 @@
 		<scope>source.go(?!.*(string|comment))</scope>
 		<context><![CDATA[
 			[
-				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "(return|[:{,\\(])\\s*&$"},
+				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "(return|[:{,\\(=])\\s*&$"},
 			]
 		]]></context>
 		<description>if equal nil</description>
@@ -116,7 +116,7 @@
 		<scope>source.go(?!.*(string|comment))</scope>
 		<context><![CDATA[
 			[
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "err\\s*!$"},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "err\\w*\\s*!$"},
 			]
 		]]></context>
 		<description>if error not equal nil</description>

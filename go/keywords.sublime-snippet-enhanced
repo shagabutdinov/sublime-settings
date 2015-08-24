@@ -118,7 +118,7 @@ false
 		<scope>source.go(?!=.*string)</scope>
 		<context><![CDATA[
 			[
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\w\\[\\{\\(,=]\\s*f$"},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\w\\[\\{\\(,=:]\\s*f$"},
 			]
 		]]></context>
 		<order>5</order>

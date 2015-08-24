@@ -36,6 +36,21 @@ class ${2:$class} extends ${3:\\yii\\web\\Controller}
 
 	<snippet>
 		<content><![CDATA[
+createCommand()->getRawSql()
+]]></content>
+		<tabTrigger>cc</tabTrigger>
+		<trigger>cc</trigger>
+		<scope>source.php</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "->cc$"},
+			]
+		]]></context>
+		<description>get sql raw query</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
 <?php
 
 namespace app\\commands;

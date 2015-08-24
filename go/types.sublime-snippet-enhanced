@@ -146,6 +146,27 @@ string
 
 	<snippet>
 		<content><![CDATA[
+s${trigger1}
+]]></content>
+		<triggerRegexp>string(\w)</triggerRegexp>
+		<scope>source.go</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "(\\w\\s*string\\w)$"},
+				[
+					{"key": "in_go_type_definition", "operator": "equal", "operand": true},
+					"or",
+					{"key": "in_method_definition", "operator": "equal", "operand": true},
+				],
+				"or",
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "([\\[\\]]|\\.\\()string\\w$"},
+			]
+		]]></context>
+		<description>string</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
 int
 ]]></content>
 		<trigger>i</trigger>
