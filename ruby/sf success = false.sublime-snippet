@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-success = false
-]]></content>
-	<tabTrigger>sf</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

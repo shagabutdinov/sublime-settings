@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-view = @view.prepare($0)
-]]></content>
-	<tabTrigger>vp</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

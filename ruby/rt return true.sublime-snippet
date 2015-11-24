@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-return true
-]]></content>
-	<tabTrigger>rt</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

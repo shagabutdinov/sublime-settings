@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<%= view.render($0) %>
-]]></content>
-	<tabTrigger>vr</tabTrigger>
-	<scope>text.html.ruby(?!.*source)</scope>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-raise ${1:Error}$2.new($0)
-]]></content>
-	<tabTrigger>ra</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

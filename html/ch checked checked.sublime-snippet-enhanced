@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-checked="checked"
-]]></content>
-	<tabTrigger>ch</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-	<description>checked checked</description>
-</snippet>

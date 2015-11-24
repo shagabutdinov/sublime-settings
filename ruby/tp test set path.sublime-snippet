@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-@path = File.realpath(File.dirname(__FILE__)) + '/data'
-]]></content>
-	<tabTrigger>tp</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

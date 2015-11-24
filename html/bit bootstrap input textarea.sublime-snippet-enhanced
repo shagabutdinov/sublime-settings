@@ -1,6 +1,0 @@
-<snippet>
-	<content><![CDATA[<textarea class="form-control" id="${2:key}" name="${2:key}" placeholder="">$3</textarea>
-<div class="Form-message" Form-message="${2:key}"></div>]]></content>
-	<tabTrigger>bit</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

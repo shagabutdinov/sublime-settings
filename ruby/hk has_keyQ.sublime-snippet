@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-has_key?($0)
-]]></content>
-	<tabTrigger>hk</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

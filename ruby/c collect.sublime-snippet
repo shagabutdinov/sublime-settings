@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-collect() { |${1:object1}|
-	${0:$selection}
-}
-]]></content>
-	<tabTrigger>c</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

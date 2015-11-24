@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-@$1 = options[:$1]
-]]></content>
-	<tabTrigger>so</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-empty?()
-]]></content>
-	<tabTrigger>em</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

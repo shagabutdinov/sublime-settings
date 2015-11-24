@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-@database.execute(${1:sql})
-]]></content>
-	<tabTrigger>de</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

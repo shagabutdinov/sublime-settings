@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-class $1Error$2 < StandardError; end
-]]></content>
-	<tabTrigger>ce</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

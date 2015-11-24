@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-def setup()
-	$0
-end]]></content>
-
- <tabTrigger>tdu</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

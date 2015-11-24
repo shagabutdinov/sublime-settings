@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<?php if($1) { echo $2; } ?>
-]]></content>
-	<tabTrigger>ip</tabTrigger>
-	<scope>text.html</scope>
-	<description>php if echo</description>
-</snippet>

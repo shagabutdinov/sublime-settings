@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\$idfly.UserAuth.get()
-]]></content>
-	<tabTrigger>uag</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

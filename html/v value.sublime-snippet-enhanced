@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-value="${1:$selection}"
-]]></content>
-	<tabTrigger>v</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-	<description>value</description>
-</snippet>

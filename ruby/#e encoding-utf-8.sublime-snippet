@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-# encoding: utf-8
-]]></content>
-	<tabTrigger>#e</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

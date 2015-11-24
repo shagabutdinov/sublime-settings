@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-@message.notice("${1:message}", ${2:options})
-]]></content>
-	<tabTrigger>mn</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-returns($0)
-]]></content>
-		<tabTrigger>mr</tabTrigger>
-		<scope>source.js</scope>
-		<description></description>
-</snippet>

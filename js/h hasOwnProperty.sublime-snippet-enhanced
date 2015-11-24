@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-hasOwnProperty($1)
-]]></content>
-	<tabTrigger>h</tabTrigger>
-	<scope>source.js</scope>
-	<description>hasOwnProperty</description>
-</snippet>

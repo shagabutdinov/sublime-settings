@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-import.get_kernel()
-]]></content>
-	<tabTrigger>ik</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>import get_kernel</description>
-</snippet>

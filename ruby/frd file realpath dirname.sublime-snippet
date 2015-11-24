@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-File.realpath(File.dirname( __FILE__ )) + '/${1:path}'
-]]></content>
-		<tabTrigger>frd</tabTrigger>
-		<scope>source.ruby</scope>
-		<description>object</description>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-import.get_config_value($1, ${2:default})
-]]></content>
-  <tabTrigger>ic</tabTrigger>
-  <scope>source.ruby</scope>
-</snippet>

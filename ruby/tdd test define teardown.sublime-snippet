@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-def teardown()
-	$0
-end]]></content>
-
- <tabTrigger>tdd</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

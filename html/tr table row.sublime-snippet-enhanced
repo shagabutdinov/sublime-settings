@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<tr>
-	${0:$selection}
-</tr>
-]]></content>
-	<tabTrigger>tr</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

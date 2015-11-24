@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-$1: kernel.service(config[:$1] || :$1),
-]]></content>
-	<tabTrigger>cs</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

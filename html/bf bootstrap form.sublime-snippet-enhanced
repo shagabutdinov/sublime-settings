@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[<form role="form" class="form-horizontal">
-	$0
-</form>]]></content>
-	<tabTrigger>bf</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

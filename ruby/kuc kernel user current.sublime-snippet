@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\$idfly.User.current
-]]></content>
-	<tabTrigger>kuc</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

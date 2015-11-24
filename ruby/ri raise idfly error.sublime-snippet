@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-raise IdFly::${1:class}::Error.new($0)
-]]></content>
-	<tabTrigger>ri</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-btn-primary
-]]></content>
-    <tabTrigger>bp</tabTrigger>
-    <scope>text.html(?!.*source).*string</scope>
-    <description>btn primary</description>
-</snippet>

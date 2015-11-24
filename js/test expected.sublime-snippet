@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-expected
-]]></content>
-		<tabTrigger>tee</tabTrigger>
-		<scope>source.js</scope>
-		<description></description>
-</snippet>

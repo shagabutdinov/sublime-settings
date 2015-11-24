@@ -1,6 +1,0 @@
-<snippet>
-		<content><![CDATA[function(r) { actual = r; }]]></content>
-		<tabTrigger>tfr</tabTrigger>
-		<scope>source.js</scope>
-		<description>Anonymous Function</description>
-</snippet>

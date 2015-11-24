@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-instance_of?($0)
-]]></content>
-	<tabTrigger>io</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

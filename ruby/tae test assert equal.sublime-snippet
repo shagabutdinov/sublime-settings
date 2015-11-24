@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-assert_equal($1, $2)
-]]></content>
-	<tabTrigger>tae</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

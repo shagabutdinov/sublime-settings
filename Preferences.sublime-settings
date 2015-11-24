@@ -33,7 +33,7 @@
 	"bold_folder_labels": false,
 	"caret_style": "smooth",
 	"close_windows_when_empty": false,
-	"color_scheme": "Packages/User/Tubnil Bright (SL).tmTheme",
+	"color_scheme": "Packages/User/SublimeLinter/Desert (SL).tmTheme",
 	"create_window_at_startup": false,
 	"default_encoding": "UTF-8",
 	"default_line_ending": "unix",
@@ -91,11 +91,11 @@
 	"hot_exit": true,
 	"ignored_packages":
 	[
-		"PHP Modern",
-		"Theme - Cyanide",
-		"Theme - Centurion Blue",
 		"Vintage",
-		"Tabright"
+		"Tabright",
+		"PHP Modern",
+		"Theme - Centurion Blue",
+		"Theme - Cyanide"
 	],
 	"indent_guide_options":
 	[

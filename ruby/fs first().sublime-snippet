@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-first()
-]]></content>
-	<tabTrigger>fs</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>first()</description>
-</snippet>

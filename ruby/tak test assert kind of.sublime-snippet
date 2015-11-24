@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-assert_kind_of(${1:expected}, ${2:actual})
-]]></content>
-	<tabTrigger>tak</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

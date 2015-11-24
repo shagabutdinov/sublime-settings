@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-return nil
-]]></content>
-	<tabTrigger>rn</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>return nil</description>
-</snippet>

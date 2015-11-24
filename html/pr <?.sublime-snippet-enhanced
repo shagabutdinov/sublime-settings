@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<? require ${0:$selection} ?>
-]]></content>
-	<tabTrigger>pr</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-	<description>&lt;?</description>
-</snippet>

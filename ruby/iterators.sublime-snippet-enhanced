@@ -1,0 +1,37 @@
+<snippets>
+
+  <snippet>
+    <content><![CDATA[
+collect do |$1|
+	$0
+end
+]]></content>
+    <tabTrigger>c</tabTrigger>
+    <scope>source.ruby</scope>
+    <context><![CDATA[
+      [
+        {"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\.c$"},
+      ]
+    ]]></context>
+    <order>1</order>
+    <description>collect</description>
+  </snippet>
+
+  <snippet>
+    <content><![CDATA[
+each do |$1|
+	$0
+end
+]]></content>
+    <tabTrigger>e</tabTrigger>
+    <scope>source.ruby</scope>
+    <context><![CDATA[
+      [
+        {"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\.c$"},
+      ]
+    ]]></context>
+    <order>1</order>
+    <description>each</description>
+  </snippet>
+
+</snippets>

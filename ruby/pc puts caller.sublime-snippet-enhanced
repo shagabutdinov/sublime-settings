@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-puts(caller)
-]]></content>
-	<tabTrigger>pc</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>puts caller</description>
-</snippet>

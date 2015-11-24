@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-module IdFly::Test::${0} end
-]]></content>
-	<tabTrigger>mit</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

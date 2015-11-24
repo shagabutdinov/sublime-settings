@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-form-control
-]]></content>
-	<tabTrigger>fc</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-	<description></description>
-</snippet>

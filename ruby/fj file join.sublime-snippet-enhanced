@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-File.join(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>fj</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>file join</description>
-</snippet>

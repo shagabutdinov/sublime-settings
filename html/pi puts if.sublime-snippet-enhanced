@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-<? if($1) { echo '${2:$selection__or__last_assigned_variable}'; } ?>
-]]></content>
-    <tabTrigger>pi</tabTrigger>
-    <scope>text.html(?!.*source)</scope>
-    <description>puts if</description>
-</snippet>

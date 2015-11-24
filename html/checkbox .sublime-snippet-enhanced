@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-type="checkbox
-]]></content>
-	<tabTrigger>type="c</tabTrigger>
-	<scope>text.html(?!.*source).*string</scope>
-	<description></description>
-</snippet>

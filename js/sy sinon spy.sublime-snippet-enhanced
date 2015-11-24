@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-sinon.spy(${1:$selection__or__last_assigned_variable})
-]]></content>
-	<tabTrigger>sy</tabTrigger>
-	<scope>source.js</scope>
-	<description>sinon spy</description>
-</snippet>

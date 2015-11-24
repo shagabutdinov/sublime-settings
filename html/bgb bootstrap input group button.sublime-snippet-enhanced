@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<span class="input-group-btn"><button type="button" class="btn btn-primary $1">$2</button></span>
-]]></content>
-	<tabTrigger>bgb</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-	<description>bootstrap input group button</description>
-</snippet>

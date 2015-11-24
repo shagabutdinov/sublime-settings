@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-with_index()
-]]></content>
-	<tabTrigger>wi</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>with_index</description>
-</snippet>

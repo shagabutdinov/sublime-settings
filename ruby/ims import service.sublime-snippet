@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-import(:${1:$selection}) { |helper| helper.get_service(:${2:${1:$selection}}) }
-]]></content>
-	<tabTrigger>ims</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

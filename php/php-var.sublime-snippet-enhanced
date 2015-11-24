@@ -320,14 +320,23 @@ return \$success;
 		<content><![CDATA[
 ->
 ]]></content>
-		<trigger>.</trigger>
+		<trigger>/</trigger>
 		<scope>source.php(?!.*string)(?!.*comment)</scope>
 		<context><![CDATA[
 			[
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\w\\)]\\.$"},
-				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "(^\\s*|[^\\w\\s\\)]|=>\\s*)\\.$"},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\w\\)]/$"},
+				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "(^\\s*|[^\\w\\s\\)]|=>\\s*)/$"},
 			]
 		]]></context>
+		<description></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+->${trigger1}
+]]></content>
+		<triggerRegexp>\.(\w)</triggerRegexp>
+		<scope>source.php(?!.*string)(?!.*comment)</scope>
 		<description></description>
 	</snippet>
 

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-attr_writer :${1:attribute}
-]]></content>
-	<tabTrigger>aw</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

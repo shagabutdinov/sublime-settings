@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-import(:$1) { |helper| ${0:$selection} }
-]]></content>
-	<tabTrigger>im</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

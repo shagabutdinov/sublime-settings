@@ -1,5 +1,0 @@
-<snippet>
-	<content><![CDATA[<button type="${1:button}" class="btn btn-${2:primary}">$0</button>]]></content>
-	<tabTrigger>bb</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

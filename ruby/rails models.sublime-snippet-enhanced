@@ -1,0 +1,113 @@
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
+validates :$1, $0
+]]></content>
+		<tabTrigger>v</tabTrigger>
+		<scope>source.ruby</scope>
+		<context>
+			[
+				{"key": "in_class_definition", "operator": "equal", "operand": true},
+			]
+		</context>
+		<description>rails models: validates</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+presence: true
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+			]
+		</commands>
+		<trigger>p</trigger>
+		<scope>source\.ruby\s*$</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": ",\\s*p"},
+				{"key": "statement", "operator": "regex_contains", "operand": "^validates"},
+			]
+		</context>
+		<description>rails models: validates presence</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+inclusion: { in: [$0] }
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+			]
+		</commands>
+		<trigger>i</trigger>
+		<scope>source\.ruby\s*$</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": ",\\s*i"},
+				{"key": "statement", "operator": "regex_contains", "operand": "^validates"},
+			]
+		</context>
+		<description>rails models: validates inclusion</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+has_one :$1
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>ho</tabTrigger>
+		<scope>source\.ruby\s*$</scope>
+		<context>
+			[
+				{"key": "in_class_definition", "operator": "equal", "operand": true},
+			]
+		</context>
+		<description>rails models: has one</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+has_many :$1
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>hm</tabTrigger>
+		<scope>source\.ruby\s*$</scope>
+		<context>
+			[
+				{"key": "in_class_definition", "operator": "equal", "operand": true},
+			]
+		</context>
+		<description>rails models: has many</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+where($1)
+]]></content>
+		<tabTrigger>w</tabTrigger>
+		<scope>source\.ruby\s*$</scope>
+		<context>
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\.w$"},
+			]
+		</context>
+		<description>rails models: where</description>
+	</snippet>
+
+</snippets>

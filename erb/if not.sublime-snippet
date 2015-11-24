@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<% if !$1 %>
-	${0:$selection}
-<% end %>
-]]></content>
-	<tabTrigger>in</tabTrigger>
-	<scope>text.html.ruby(?!.*source)</scope>
-</snippet>

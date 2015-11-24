@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-helper.get_service($1)
-]]></content>
-  <tabTrigger>igs</tabTrigger>
-  <scope>source.ruby</scope>
-</snippet>

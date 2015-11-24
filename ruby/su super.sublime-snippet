@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-super(${1:options})
-]]></content>
-	<tabTrigger>su</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

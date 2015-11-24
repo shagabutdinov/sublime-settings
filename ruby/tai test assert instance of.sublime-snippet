@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-assert_instance_of(${1:expected}, ${2:actual})
-]]></content>
-	<tabTrigger>tai</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

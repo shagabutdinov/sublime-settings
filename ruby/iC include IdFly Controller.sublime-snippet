@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-include IdFly::Controller::Controller
-]]></content>
-	<tabTrigger>iC</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

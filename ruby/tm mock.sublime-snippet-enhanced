@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-mock()
-]]></content>
-	<tabTrigger>tm</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>mock</description>
-</snippet>

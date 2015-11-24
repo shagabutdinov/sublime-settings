@@ -1,7 +1,0 @@
-<snippet>
-  <content><![CDATA[
-get_config_value($1, ${2:default})
-]]></content>
-  <tabTrigger>gc</tabTrigger>
-  <scope>source.ruby</scope>
-</snippet>

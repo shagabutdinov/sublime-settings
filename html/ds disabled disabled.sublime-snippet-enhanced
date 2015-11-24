@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-disabled="disabled"
-]]></content>
-	<tabTrigger>ds</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-	<description>disabled disabled</description>
-</snippet>

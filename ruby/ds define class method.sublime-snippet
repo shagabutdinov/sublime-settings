@@ -1,8 +1,0 @@
-<snippet>
-  <content><![CDATA[
-def self.${1:method}(${2:arguments})
-  $0
-end]]></content>
- <tabTrigger>ds</tabTrigger>
-  <scope>source.ruby</scope>
-</snippet>

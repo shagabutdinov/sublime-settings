@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-values()
-]]></content>
-	<tabTrigger>v</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

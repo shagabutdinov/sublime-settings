@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-&mdash;
-]]></content>
-	<tabTrigger>m</tabTrigger>
-	<scope>text.html(?!.*(source|meta.tag))</scope>
-	<description>mdash</description>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-\$idfly.UtilityNumber.readable(${0:$selection})
-]]></content>
-	<tabTrigger>unr</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-btn-warning
-]]></content>
-    <tabTrigger>bw</tabTrigger>
-    <scope>text.html(?!.*source).*string</scope>
-    <description>btn warning</description>
-</snippet>

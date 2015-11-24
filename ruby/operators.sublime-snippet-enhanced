@@ -1,0 +1,121 @@
+<snippets>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable}
+ 	${0:$selection}
+end
+]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\s*i$"},
+			]
+		]]></context>
+		<description>operators: if</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${0:$selection}
+ 	$1
+end
+]]></content>
+		<commands>
+			[
+				{"command": "move_to", "args": {"extend": true, "to": "eol"}},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\s*i$"},
+				{"key": "following_text_end", "operator": "regex_contains", "operand": "\\S"},
+			]
+		]]></context>
+		<description>operators: if</description>
+		<order>1</order>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${1:$last_assigned_variable}
+]]></content>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\S\\s*i$"},
+			]
+		]]></context>
+		<description>operators: if</description>
+		<order>2</order>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+if ${0:$selection}
+]]></content>
+		<commands>
+			[
+				{"command": "move_to", "args": {"extend": true, "to": "eol"}},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>i</tabTrigger>
+		<scope>source.ruby</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "\\S\\s*i$"},
+				{"key": "following_text_end", "operator": "regex_contains", "operand": "\\S"},
+			]
+		]]></context>
+		<description>operators: if</description>
+		<order>3</order>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+do
+	${0:$selection}
+end
+]]></content>
+		<commands>
+			[
+				{"command": "ensure_space_before"},
+				"RUN",
+			]
+		</commands>
+		<tabTrigger>d</tabTrigger>
+		<scope>source.ruby</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "(\\w|\\))\\s*d$"},
+			]
+		]]></context>
+		<description>operators: do ... end</description>
+		<order>1</order>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+raise $0
+]]></content>
+		<tabTrigger>ra</tabTrigger>
+		<scope>source.ruby</scope>
+		<description>operators: raise</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+puts "TEST" * 100
+]]></content>
+		<tabTrigger>pt</tabTrigger>
+		<scope>source.ruby</scope>
+		<description>operators: puts "TEST" * 100</description>
+	</snippet>
+
+</snippets>

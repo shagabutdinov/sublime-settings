@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<span class="UtilityForm-message-rest"></span>
-]]></content>
-	<tabTrigger>ufmr</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

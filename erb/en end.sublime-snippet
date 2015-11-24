@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<% end %>
-]]></content>
-	<tabTrigger>en</tabTrigger>
-	<scope>text.html.ruby(?!.*source)</scope>
-</snippet>

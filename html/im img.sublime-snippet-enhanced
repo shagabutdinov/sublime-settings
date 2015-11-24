@@ -1,5 +1,0 @@
-<snippet>
-	<content><![CDATA[<img src="$1" class="$2">]]></content>
-	<tabTrigger>im</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

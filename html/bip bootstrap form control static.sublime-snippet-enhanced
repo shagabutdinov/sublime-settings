@@ -1,5 +1,0 @@
-<snippet>
-	<content><![CDATA[<p class="form-control-static">$0</p>]]></content>
-	<tabTrigger>bip</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

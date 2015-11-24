@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-returns(${3:value})
-]]></content>
-	<tabTrigger>ur</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

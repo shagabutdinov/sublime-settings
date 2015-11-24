@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-throws(:${3:1})
-]]></content>
-	<tabTrigger>uh</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<span class="UtilityForm-loader"></span>
-]]></content>
-	<tabTrigger>ufl</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

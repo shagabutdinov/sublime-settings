@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-in_sequence(${1:sequence})
-]]></content>
- <tabTrigger>uq</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>

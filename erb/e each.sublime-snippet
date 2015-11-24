@@ -1,9 +1,0 @@
-<snippet>
-	<content><![CDATA[
-<% $1.each() { |$2| %>
-${0:$selection}
-<% } %>
-]]></content>
-	<tabTrigger>e</tabTrigger>
-	<scope>text.html.ruby(?!.*source)</scope>
-</snippet>

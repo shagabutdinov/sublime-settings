@@ -1,5 +1,0 @@
-<snippet>
-	<content><![CDATA[<label for="$1">$0</label>]]></content>
-	<tabTrigger>la</tabTrigger>
-	<scope>text.html(?!.*source)</scope>
-</snippet>

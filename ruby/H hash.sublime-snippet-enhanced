@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-::Hash
-]]></content>
-	<tabTrigger>H</tabTrigger>
-	<scope>source.ruby</scope>
-	<description>hash</description>
-</snippet>

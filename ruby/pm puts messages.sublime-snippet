@@ -1,7 +1,0 @@
-<snippet>
-	<content><![CDATA[
-puts \$idfly.Message.messages.collect { |m| m[:message] }
-]]></content>
-	<tabTrigger>pm</tabTrigger>
-	<scope>source.ruby</scope>
-</snippet>
