@@ -270,74 +270,58 @@ return \$success;
 
 	<snippet>
 		<content><![CDATA[
-\$this
-]]></content>
-		<tabTrigger>.</tabTrigger>
-		<scope>source.php(?!.*string)(?!.*comment)</scope>
-		<description></description>
-	</snippet>
-
-	<snippet>
-		<content><![CDATA[
-\$this
-]]></content>
-		<trigger>.</trigger>
-		<scope>source.php(?!.*string)(?!.*comment)</scope>
-		<context><![CDATA[
-			[
-				{"key": "following_text_end", "operator": "not_regex_contains", "operand": "^\\w"},
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "(^\\s*|[^\\w\\s\\)]|(=>|=)\\s*)\\.$"},
-			]
-		]]></context>
-		<description></description>
-	</snippet>
-
-	<snippet>
-		<content><![CDATA[
-\$this->
-]]></content>
-		<trigger>.</trigger>
-		<scope>source.php(?!.*string)(?!.*comment)</scope>
-		<context><![CDATA[
-			[
-				{"key": "following_text_end", "operator": "regex_contains", "operand": "^\\w"},
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "(^\\s*|[^\\w\\s\\)]|=>\\s*)\\.$"},
-			]
-		]]></context>
-		<description></description>
-	</snippet>
-
-	<snippet>
-		<content><![CDATA[
 \$this->
 ]]></content>
 		<tabTrigger>4</tabTrigger>
 		<scope>source.php(?!.*string)(?!.*comment)</scope>
-		<description></description>
+		<description>$this-></description>
+		<order>1</order>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+\$this->
+]]></content>
+		<tabTrigger>$this</tabTrigger>
+		<scope>source.php(?!.*string)(?!.*comment)</scope>
+		<description>this-></description>
 	</snippet>
 
 	<snippet>
 		<content><![CDATA[
 ->
 ]]></content>
-		<trigger>/</trigger>
-		<scope>source.php(?!.*string)(?!.*comment)</scope>
+		<trigger>\</trigger>
+		<scope>source.php</scope>
 		<context><![CDATA[
 			[
-				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "[\\w\\)]/$"},
-				{"key": "preceding_text_begin", "operator": "not_regex_contains", "operand": "(^\\s*|[^\\w\\s\\)]|=>\\s*)/$"},
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "(.*\\)|.*\\$(\\w|->)+|^\\s*)\\\\$"},
 			]
 		]]></context>
-		<description></description>
+		<description>-></description>
 	</snippet>
 
 	<snippet>
 		<content><![CDATA[
-->${trigger1}
+)->
 ]]></content>
-		<triggerRegexp>\.(\w)</triggerRegexp>
-		<scope>source.php(?!.*string)(?!.*comment)</scope>
-		<description></description>
+		<tabTrigger>)</tabTrigger>
+		<scope>source.php</scope>
+		<description>-></description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
+=>
+]]></content>
+		<trigger>\</trigger>
+		<scope>source.php(?!.*string)</scope>
+		<context><![CDATA[
+			[
+				{"key": "preceding_text_begin", "operator": "regex_contains", "operand": "('|\")\\\\$"},
+			]
+		]]></context>
+		<description>-></description>
 	</snippet>
 
 	<snippet>

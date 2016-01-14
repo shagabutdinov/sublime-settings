@@ -659,4 +659,5 @@ throw new ${1:\Exception}('${2:$selection}')
 		<scope>source.php</scope>
 		<description>quote plus</description>
 	</snippet>
+
 </snippets>

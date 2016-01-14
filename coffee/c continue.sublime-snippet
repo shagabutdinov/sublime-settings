@@ -1,8 +1,0 @@
-<snippet>
-    <content><![CDATA[
-continue
-]]></content>
-    <tabTrigger>c</tabTrigger>
-    <scope>source.coffee</scope>
-    <description>continue</description>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-closest('$1')
-]]></content>
-		<tabTrigger>cl</tabTrigger>
-		<scope>source.coffee</scope>
-		<description>closest</description>
-</snippet>

@@ -20,6 +20,15 @@ value="$0"
 
 	<snippet>
 		<content><![CDATA[
+style="$0"
+]]></content>
+		<tabTrigger>s</tabTrigger>
+		<scope>meta.tag</scope>
+		<description>properties: style</description>
+	</snippet>
+
+	<snippet>
+		<content><![CDATA[
 enctype="multipart/form-data"
 ]]></content>
 		<tabTrigger>en</tabTrigger>

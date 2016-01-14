@@ -1,9 +1,0 @@
-<snippet>
-  <content><![CDATA[
-for $1 of ${2:$last_assigned_variable}
-  ${0:$selection}
-]]></content>
-  <tabTrigger>fo</tabTrigger>
-  <scope>source.coffee</scope>
-  <description>for 1 of 2</description>
-</snippet>

@@ -1,8 +1,0 @@
-<snippet>
-	<content><![CDATA[
-instanceof $0
-]]></content>
-	<tabTrigger>io</tabTrigger>
-	<scope>source.coffee</scope>
-	<description>instanceof</description>
-</snippet>

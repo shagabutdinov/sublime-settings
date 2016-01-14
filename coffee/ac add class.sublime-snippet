@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-addClass('$1')
-]]></content>
-		<tabTrigger>ac</tabTrigger>
-		<scope>source.coffee</scope>
-		<description></description>
-</snippet>

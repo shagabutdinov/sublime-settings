@@ -1,8 +1,0 @@
-<snippet>
-		<content><![CDATA[
-self = this
-]]></content>
-		<tabTrigger>st</tabTrigger>
-		<scope>source.coffee</scope>
-		<description></description>
-</snippet>
